@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Typography</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      #page {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="main-header">
+          <h1 id="title-heading" class="pagetitle">
+            <span id="title-text">Typography </span>
+          </h1>
+        </div>
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              Typography is a key element of a design system which helps to
+              establish hierarchy, readability and visual appeal. It defines the
+              text styles that are used across all the scenarios. It includes
+              the font(s) to be used along with the type scale and the style
+              variations. This helps in establishing consistency and all the
+              benefits that follow consistency.
+            </p>
+            <h2 id="Typography-Contents">Contents</h2>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Typeface"
+                rel="nofollow"
+                >Typeface</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Scale"
+                rel="nofollow"
+                >Scale</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Line-Height"
+                rel="nofollow"
+                >Line Height</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Letter-Spacing"
+                rel="nofollow"
+                >Letter Spacing</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Properties"
+                rel="nofollow"
+                >Properties</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Type-Sets"
+                rel="nofollow"
+                >Type Sets</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Font-Tokens"
+                rel="nofollow"
+                >Font Tokens</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Tokens-Composition"
+                rel="nofollow"
+                >Token Composition</a
+              >
+            </p>
+            <p>Font Variable Tokens</p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/typography/Typography#Guidelines"
+                rel="nofollow"
+                >Usage Guidelines</a
+              >
+            </p>
+            <h2 id="Typography-Typeface">Typeface</h2>
+            <p>
+              GDS uses the open-source typeface IBM Plex. IBM Plex illustrates
+              the unique relationship between mankind and machines. It is a
+              neutral, yet friendly Grotesque style typeface that includes a
+              Sans, Sans Condensed, Mono, Serif, and several other styles for
+              several languages. It has excellent legibility in print, web and
+              mobile interfaces.
+            </p>
+            <p>
+              GDS currently uses the Sans and Mono styles. The Sans style is
+              versatile and is used for headings, body, labels and numbers while
+              the Mono style is used for code snippets, currency amount and ID
+              strings.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typeface.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3240526375.png"
+                data-image-src="/assets/attachments/typography/3240526375.png"
+                data-height="168"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3240526375"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typeface.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="2edc4aef-06f4-4c02-bb92-bc80aa7b2eb5"
+                data-media-type="file"
+            /></span>
+            <h2 id="Typography-Scale">Scale</h2>
+            <p>
+              A typographic scale helps maintain consistency in font sizes and
+              creates a harmonious layout.
+            </p>
+            <p>
+              GDS typographic scale is built on a single equation. The formula
+              was created to provide hierarchy for all types of experiences.
+            </p>
+            <p><code>Xn = Xn-1 + {INT[(n-2)/4] + 1} * 2 </code></p>
+            <p><code>Xn: step n type size Xn-1: step n-1 type size</code></p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typographic Scale.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3242197260.png?width=760"
+                data-image-src="/assets/attachments/typography/3242197260.png"
+                data-height="902"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3242197260"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typographic Scale.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="1296c60f-9657-4c10-8380-300b85e570aa"
+                data-media-type="file"
+            /></span>
+            <h2 id="Typography-LineHeight">Line Height</h2>
+            <p>
+              Line height, also known as line spacing or leading, refers to the
+              vertical space between lines of text in a paragraph. It is
+              measured from the baseline of one line of text to the baseline of
+              the next line.
+            </p>
+            <p>
+              Line height plays a crucial role in readability and legibility. In
+              GDS, the recommended line height is 1.5x font size.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Line Height.png"
+                width="759"
+                loading="lazy"
+                src="/assets/attachments/typography/3242722114.png?width=759"
+                data-image-src="/assets/attachments/typography/3242722114.png"
+                data-height="349"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3242722114"
+                data-linked-resource-version="4"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Line Height.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="baf54a07-e0dc-49c3-8d1f-7929cb3cbd40"
+                data-media-type="file"
+            /></span>
+            <h2 id="Typography-LetterSpacing">Letter Spacing</h2>
+            <p>
+              Spacing between the letters determines the density of the font.
+              All fonts have a default spacing of 0px. But it can be adjusted
+              based on the specific requirements. For example, the spacing could
+              be increased for smaller font sizes to improve the readability. It
+              could also be reduced for large font sizes to close the additional
+              gap that results from scaling the font.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Letter spacing.png"
+                width="759"
+                loading="lazy"
+                src="/assets/attachments/typography/3245016173.png?width=759"
+                data-image-src="/assets/attachments/typography/3245016173.png"
+                data-height="335"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245016173"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Letter spacing.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="a2412c5e-d8c3-4cd1-835a-b0b20630e166"
+                data-media-type="file"
+            /></span>
+            <h2 id="Typography-Properties">Properties</h2>
+            <h3 id="Typography-FormattingStyles">Formatting Styles</h3>
+            <h3 id="Typography--FontWeights">- Font Weights</h3>
+            <p>
+              Font weight is an important typographic variable that is used to
+              add emphasis and differentiate content hierarchy. Font weight and
+              size pairings must be carefully balanced. A bold weight will
+              always have more emphasis than a lighter weight font of the same
+              size. However, a lighter-weight font can rank hierarchically
+              higher than a bold font if the lighter-weight type size is
+              significantly larger than the bold one.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Font Weight.png"
+                width="755"
+                loading="lazy"
+                src="/assets/attachments/typography/3243311840.png?width=755"
+                data-image-src="/assets/attachments/typography/3243311840.png"
+                data-height="497"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3243311840"
+                data-linked-resource-version="4"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Font Weight.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="392aae7a-0504-4abf-bb5a-18d28320401b"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography--Italics">- Italics</h3>
+            <p>
+              Each weight has an italic style, which should only be used when
+              you need to emphasize certain words in a sentence. They can also
+              be used for names, captions, technical terms etc.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Font Style.png"
+                width="759"
+                loading="lazy"
+                src="/assets/attachments/typography/3245671408.png?width=759"
+                data-image-src="/assets/attachments/typography/3245671408.png"
+                data-height="497"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245671408"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Font Style.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="caa800f7-3241-45b5-b3e9-d143ff01f0f5"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography--Decoration">- Decoration</h3>
+            <h4 style="margin-left: 30px" id="Typography-Underline">
+              Underline
+            </h4>
+            <p style="margin-left: 30px">
+              Text that is underlined can serve two purposes: linking to other
+              pages, or offering additional contextual information through a
+              tooltip or a popover.
+            </p>
+            <h4 style="margin-left: 30px" id="Typography-StrikeThrough">
+              Strike Through
+            </h4>
+            <p style="margin-left: 30px">
+              Strikethrough is a text decoration style that draws a horizontal
+              line through the middle of the text. It is commonly used to
+              indicate that the text is no longer relevant or has been deleted.
+            </p>
+            <h3 id="Typography-Case">Case</h3>
+            <p>
+              Cases determine the appearance of letters and words in a sentence.
+              It could be:
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Upper case</strong>: All letters are capitalized.
+                  Example: &quot;HELLO, WORLD!&quot;
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Lower case</strong>: All letters are in lowercase.
+                  Example: &quot;hello, world!&quot;
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Title case</strong>: The first letter of each word is
+                  capitalized, except for articles, conjunctions, and
+                  prepositions. Example &quot;The Quick Brown Fox Jumps Over the
+                  Lazy Dog&quot;
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>None (as typed</strong>): Keep it as it is how the
+                  user types. Example: &quot;The quick brown fox jumps over the
+                  lazy dog.&quot;
+                </p>
+              </li>
+            </ul>
+            <p>
+              Refer the <u>content guidelines</u> to understand the usage of
+              each case.
+            </p>
+            <h3 id="Typography-TypeColors">Type Colors</h3>
+            <p>
+              Type color should be carefully considered, with legibility and
+              accessibility as paramount concerns.
+            </p>
+            <p>
+              GDS has several pre-built color tokens that should be used for
+              most text colors. If any other colors need to be used, the color
+              choice should consider accessibility and legibility. Refer the
+              <u>Color</u> foundation document for additional guidance.
+            </p>
+            <h2 id="Typography-TypeSets">Type Sets</h2>
+            <h3 id="Typography-Heading">Heading</h3>
+            <p>It is used for all the headings.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Heading.png"
+                width="759"
+                loading="lazy"
+                src="/assets/attachments/typography/3245277331.png?width=759"
+                data-image-src="/assets/attachments/typography/3245277331.png"
+                data-height="298"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245277331"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Heading.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="02b4e37e-61a9-4cc7-9f19-b8aa8743665d"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography-Body">Body</h3>
+            <p>It is used for any textual content.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Text.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3244982444.png?width=760"
+                data-image-src="/assets/attachments/typography/3244982444.png"
+                data-height="154"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3244982444"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Text.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="48b0dc0f-2e64-49a9-8063-5e2c46a8f537"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography-Label">Label</h3>
+            <p>It is used for form field labels.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Label.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3245179118.png?width=760"
+                data-image-src="/assets/attachments/typography/3245179118.png"
+                data-height="66"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245179118"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Label.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="55653265-04aa-45c1-b9ed-5efe9361f198"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography-Link">Link</h3>
+            <p>It is used to include hyperlinks in the content.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Link.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3245048072.png?width=760"
+                data-image-src="/assets/attachments/typography/3245048072.png"
+                data-height="100"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245048072"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Link.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="37abb897-7659-45ff-9e78-44116327ca8b"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography-Code">Code</h3>
+            <p>It is used to define a piece of computer code.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Code.png"
+                width="759"
+                loading="lazy"
+                src="/assets/attachments/typography/3244982489.png?width=759"
+                data-image-src="/assets/attachments/typography/3244982489.png"
+                data-height="228"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3244982489"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Code.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="31c1d9af-2ade-4a02-b3a7-88ed85538fbd"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography-List">List</h3>
+            <p>It defines the list items. There are 2 types of lists:</p>
+            <ul>
+              <li>
+                <p>Unordered or bulleted lists</p>
+              </li>
+            </ul>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Unordered list.png"
+                width="759"
+                loading="lazy"
+                src="/assets/attachments/typography/3245080800.png?width=759"
+                data-image-src="/assets/attachments/typography/3245080800.png"
+                data-height="168"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245080800"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Unordered list.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="281f22f8-7733-4e21-bbc4-848341941a72"
+                data-media-type="file"
+            /></span>
+            <div
+              class="confluence-information-macro confluence-information-macro-information"
+            >
+              <span
+                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+              ></span>
+              <div class="confluence-information-macro-body">
+                <p>
+                  An unordered list has the flexibility to change the dot to any
+                  icon or image
+                </p>
+                <span
+                  class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"
+                  ><img
+                    class="confluence-embedded-image image-left"
+                    alt="Listwithicons.png"
+                    width="212"
+                    loading="lazy"
+                    src="/assets/attachments/typography/3247800384.png?width=212"
+                    data-image-src="/assets/attachments/typography/3247800384.png"
+                    data-height="160"
+                    data-width="212"
+                    data-unresolved-comment-count="0"
+                    data-linked-resource-id="3247800384"
+                    data-linked-resource-version="1"
+                    data-linked-resource-type="attachment"
+                    data-linked-resource-default-alias="Listwithicons.png"
+                    data-base-url="https://zeta-tm.atlassian.net/wiki"
+                    data-linked-resource-content-type="image/png"
+                    data-linked-resource-container-id="typography"
+                    data-linked-resource-container-version="20"
+                    data-media-id="33cca6c4-c346-4176-8add-ff4f2a4ad404"
+                    data-media-type="file"
+                /></span>
+              </div>
+            </div>
+            <p>Nested Unordered List</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Nested Unordered list.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3247571010.png?width=760"
+                data-image-src="/assets/attachments/typography/3247571010.png"
+                data-height="240"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3247571010"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Nested Unordered list.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="aecb2f5b-bc9e-4a6c-ad11-de59df25827a"
+                data-media-type="file"
+            /></span>
+            <p />
+            <ul>
+              <li>
+                <p>Ordered or numbered lists</p>
+              </li>
+            </ul>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Ordered list.png"
+                width="759"
+                loading="lazy"
+                src="/assets/attachments/typography/3244949788.png?width=759"
+                data-image-src="/assets/attachments/typography/3244949788.png"
+                data-height="168"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3244949788"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Ordered list.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="d30fa413-8e8d-4725-9109-a1a06ab28e22"
+                data-media-type="file"
+            /></span>
+            <p>Nested Ordered List</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Nested ordered list.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3247636561.png?width=760"
+                data-image-src="/assets/attachments/typography/3247636561.png"
+                data-height="240"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3247636561"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Nested ordered list.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="36ac7046-ccd8-4448-af1b-7c9e13486591"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography-Blockquote">Blockquote</h3>
+            <p>
+              It is used to caption or empasize a certain content. The text
+              visually distinguishes from the regular text.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Blockquotes.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3245048084.png?width=760"
+                data-image-src="/assets/attachments/typography/3245048084.png"
+                data-height="168"
+                data-width="569"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245048084"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Blockquotes.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="0fed6784-9d73-4f35-83c9-92063d746dfe"
+                data-media-type="file"
+            /></span>
+            <h2 id="Typography-FontTokens">Font Tokens</h2>
+            <p>In GDS we utilise the below font tokens for Aphrodite theme:</p>
+            <h3 id="Typography-1.HeadingTypeSet">1. Heading Type Set</h3>
+            <p>Typeface: IBM Plex Sans</p>
+            <h3 id="Typography-2.Text/BodyTypeSet">2. Text/Body Type Set</h3>
+            <p>Typeface: IBM Plex Sans</p>
+            <h3 id="Typography-3.ParagraphTypeSet">3. Paragraph Type Set</h3>
+            <p>Typeface: IBM Plex Sans</p>
+            <h3 id="Typography-4.Label">4. Label</h3>
+            <p>Typeface: IBM Plex Sans</p>
+            <h3 id="Typography-5.Link">5. Link</h3>
+            <p>Typeface: IBM Plex Sans</p>
+            <h3 id="Typography-6.Code">6. Code</h3>
+            <p>Typeface: IBM Plex Mono</p>
+            <h2 id="Typography-TokenComposition">Token Composition</h2>
+            <p>
+              Fonts are always used along with their styling values. Therefore,
+              in GDS the font tokens are created as composite tokens by
+              composing all the required styling variables.
+            </p>
+            <p>
+              For example, from the above font tokens, each token represents a
+              font along with all its styling values. i.e, body-large is
+              composed of the font family, font size, weight, line height and
+              letter spacing.
+            </p>
+            <h2 id="Typography-UsageGuidelines">Usage Guidelines</h2>
+            <h3 id="Typography-Do’s">Do’s</h3>
+            <p>
+              Make sure to use the pre defined fonts (as listed above) across
+              all use cases and themes.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typography_do_1.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3245048516.png?width=760"
+                data-image-src="/assets/attachments/typography/3245048516.png"
+                data-height="138"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245048516"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typography_do_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="f2eb163b-db49-49fd-9b90-028a790dda37"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Keep the line length ideal i.e 50-75 characters (including spaces)
+              to make the content easily readable.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typography_do_2.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3245081170.png?width=760"
+                data-image-src="/assets/attachments/typography/3245081170.png"
+                data-height="261"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245081170"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typography_do_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="cfad7e3b-ba56-4677-9edf-8dd77d6f8fe0"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>Follow appropriate heading levels to maintain hierarchy.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typography_do_3.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3245015837.png?width=760"
+                data-image-src="/assets/attachments/typography/3245015837.png"
+                data-height="261"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245015837"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typography_do_3.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="7c0d7cd4-c025-4a33-94d6-a64a597540e4"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              For code snippets use the monospaced font version, which is the
+              token “code” (composed with IBM Plex Mono)
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typography_do_4.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3244950275.png?width=760"
+                data-image-src="/assets/attachments/typography/3244950275.png"
+                data-height="261"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3244950275"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typography_do_4.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="858aa757-4318-4180-80ce-c4d2f5ffeba9"
+                data-media-type="file"
+            /></span>
+            <h3 id="Typography-Don’ts">Don’ts</h3>
+            <p>Don’t underline for adding emphasis to any text.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typography_dont_1.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3245670665.png?width=760"
+                data-image-src="/assets/attachments/typography/3245670665.png"
+                data-height="138"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3245670665"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typography_dont_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="ed75f4ec-378a-41a1-bf4d-b58deb29da12"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Avoid using all caps for body text. Refer the
+              <u>content guidelines</u> and respect the capitalization rules.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typography_dont_2.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/typography/3244982814.png?width=760"
+                data-image-src="/assets/attachments/typography/3244982814.png"
+                data-height="138"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3244982814"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typography_dont_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="typography"
+                data-linked-resource-container-version="20"
+                data-media-id="8665b3c9-f4a4-4a64-a798-54542054b3e9"
+                data-media-type="file"
+            /></span>
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

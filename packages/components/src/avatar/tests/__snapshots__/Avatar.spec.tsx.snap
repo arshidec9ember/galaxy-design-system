@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-avatar avatar adjust text 1`] = `
+"<span class="z-avatar" style="--z-font-size: 14px; --z-border: none; --z-border-radius: var(--gds-border-radius-xs); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 2rem);"><span class="z-avatar__text">adjust text</span>
+<!----></span>"
+`;
+
+exports[`z-avatar bordered avatar 1`] = `
+"<span class="z-avatar" style="--z-font-size: 14px; --z-border: 2px solid #fff; --z-border-radius: var(--gds-border-radius-xs); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 2rem);"><span class="z-avatar__text"><i class="z-base-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V18Z" fill="currentColor"></path></svg></i></span>
+<!----></span>"
+`;
+
+exports[`z-avatar custom style 1`] = `
+"<span class="z-avatar" style="--z-font-size: 14px; --z-border: none; --z-border-radius: var(--gds-border-radius-xs); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 2rem); background-color: red;"><span class="z-avatar__text"><i class="z-base-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V18Z" fill="currentColor"></path></svg></i></span>
+<!----></span>"
+`;
+
+exports[`z-avatar icon avatar 1`] = `
+"<span class="z-avatar" style="--z-font-size: 14px; --z-border: none; --z-border-radius: var(--gds-border-radius-xs); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 2rem);"><span class="z-avatar__text"><i role="img" class="z-icon" style="--z-bezier: cubic-bezier(.4, 0, .2, 1);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><rect x="32" y="80" width="448" height="256" rx="16" ry="16" transform="rotate(180 256 208)" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"></rect><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M64 384h384"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M96 432h320"></path><circle cx="256" cy="208" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle><path d="M480 160a80 80 0 0 1-80-80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path><path d="M32 160a80 80 0 0 0 80-80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path><path d="M480 256a80 80 0 0 0-80 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path><path d="M32 256a80 80 0 0 1 80 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path></svg></i></span>
+<!----></span>"
+`;
+
+exports[`z-avatar image avatar 1`] = `"<span class="z-avatar" style="--z-font-size: 14px; --z-border: none; --z-border-radius: var(--gds-border-radius-xs); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 2rem);"><img loading="eager" src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg" data-image-src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg"><!----></span>"`;
+
+exports[`z-avatar round avatar 1`] = `
+"<span class="z-avatar" style="--z-font-size: 14px; --z-border: none; --z-border-radius: var(--gds-border-radius-circle); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 2rem);"><span class="z-avatar__text"><i class="z-base-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V18Z" fill="currentColor"></path></svg></i></span>
+<!----></span>"
+`;
+
+exports[`z-avatar size is number 1`] = `
+"<span class="z-avatar" style="--z-font-size: 14px; --z-border: none; --z-border-radius: var(--gds-border-radius-xs); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 50px);"><span class="z-avatar__text"><i class="z-base-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V18Z" fill="currentColor"></path></svg></i></span>
+<!----></span>"
+`;
+
+exports[`z-avatar size is string 1`] = `
+"<span class="z-avatar" style="--z-font-size: 14px; --z-border: none; --z-border-radius: var(--gds-border-radius-xs); --z-color: rgba(204, 204, 204, 1); --z-icon-color: #fff; --z-text-color: #fff; --z-text-color-avatar: #fff; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-merged-size: var(--z-avatar-size-override, 2rem);"><span class="z-avatar__text"><i class="z-base-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V18Z" fill="currentColor"></path></svg></i></span>
+<!----></span>"
+`;

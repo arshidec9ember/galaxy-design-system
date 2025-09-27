@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Design Tokens</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      #page {
+        display: flex;
+        justify-content: center;
+      }
+       
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="main-header">
+          <h1 id="title-heading" class="pagetitle">
+            <span id="title-text"> Design Tokens </span>
+          </h1>
+        </div>
+
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              Design tokens are named entities that represent atomic design
+              values. Visual interface design consists of granular design data
+              like colors, spacing, typography, shadows, etc. Design tokens
+              store these values in technology agnostic, human-readable names
+              instead of using them as hard-coded values like hex codes, pixel
+              values, etc. This allows the style values to be used consistently
+              and scalably across tools, teams, code, designs and platforms.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Design Tokens.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3255144282.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3255144282.png"
+                data-height="301"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3255144282"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Design Tokens.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="f6c3328a-3039-4aeb-b222-196a53ace7a0"
+                data-media-type="file"
+            /></span>
+            <h2 id="DesignTokens-Whyaretokensimportant?">
+              Why are tokens important?
+            </h2>
+            <p>
+              Design tokens are important because they provide a systematic
+              approach to managing and maintaining design properties such as
+              colors, typography, spacing, and more. Below are the key reasons
+              why we should tokenise the design properties:
+            </p>
+            <ol start="1">
+              <li>
+                <p>
+                  <strong>Consistency:</strong> Design tokens help maintain
+                  visual consistency across different teams and products. By
+                  defining colors, typography, and other design properties as
+                  tokens, we can ensure that these values are used consistently
+                  throughout our products.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Scalability:</strong> Design tokens make it easier to
+                  scale our design system as it grows and evolves. When design
+                  properties are defined as tokens, we can easily update them
+                  globally, making it simpler to make changes across your entire
+                  system.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Efficiency:</strong> Design tokens streamline the
+                  design and development process by providing a single source of
+                  truth for design properties. Designers and developers can
+                  reference these tokens when creating new components or
+                  features, reducing the likelihood of inconsistencies or
+                  errors.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Adaptability:</strong> Design tokens make it easier to
+                  adapt your design system to different contexts or themes. By
+                  changing the values of these tokens, we can quickly create new
+                  themes or variations of our design system without having to
+                  redefine every design property.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Collaboration:</strong> Design tokens facilitate
+                  collaboration between designers and developers. By using a
+                  common set of tokens, both teams can work more efficiently and
+                  effectively, ensuring that design intent is preserved
+                  throughout the development process.
+                </p>
+              </li>
+            </ol>
+            <h2 id="DesignTokens-TokenNaminginGDS">Token Naming in GDS</h2>
+            <p>
+              GDS uses the below token structure for defining token names. A
+              design token’s name describes how it should be used, and each part
+              communicates one piece of its usage.
+            </p>
+            <ol start="1">
+              <li>
+                <p>
+                  <strong>Foundation</strong>: The type of visual design
+                  attribute or foundational style, such as color, elevation, or
+                  space.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Property</strong>: The UI element the token is being
+                  applied to, such as a border, background, shadow, or other
+                  property.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Modifier</strong>: Additional details about the
+                  token’s purpose, such as its color role, appearance, or
+                  interaction state. Not every token has all the modifier
+                  values. For example, color-text-neutral is default color
+                  texts, headings, titles etc. and it has only one modifier i.e.
+                  color role neutral.
+                </p>
+              </li>
+            </ol>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="TokenStructure.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3266806376.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3266806376.png"
+                data-height="220"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3266806376"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="TokenStructure.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="85614b37-ecf6-4d77-8e29-647085278364"
+                data-media-type="file"
+            /></span>
+            <h2 id="DesignTokens-DesignTokenExamples">Design Token Examples</h2>
+            <h3 id="DesignTokens-ColorTokens">Color Tokens</h3>
+            <p>
+              Color tokens in GDS follow the below hierarchy. The atomic color
+              values are tokenised as Global Color Tokens and derived tokens are
+              created as Alias Color Tokens which have meaningful names and
+              specify the context of use.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Token Hierarchy.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3262972247.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3262972247.png"
+                data-height="301"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3262972247"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Token Hierarchy.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="beeb3b42-a69b-4585-987d-ac4dd740e560"
+                data-media-type="file"
+            /></span>
+            <p>
+              There are dedicated color tokens for text, links, icons,
+              backgrounds and borders.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Color Tokens.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3267396013.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3267396013.png"
+                data-height="301"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3267396013"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Color Tokens.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="b6650174-95be-4f86-92f6-2d37cb0e17b5"
+                data-media-type="file"
+            /></span>
+            <p>
+              To understand more on colors, refer our
+              <a
+                href="Colors_3248620461.html"
+                data-linked-resource-id="3248620461"
+                data-linked-resource-version="12"
+                data-linked-resource-type="page"
+                >Colors</a
+              >
+              foundation.
+            </p>
+            <h3 id="DesignTokens-TypographyTokens">Typography Tokens</h3>
+            <p>
+              To visually align typography across all GDS products, typography
+              tokens include font values, including font family, font size, font
+              weights, and line heights for all text styles.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Typography Tokens.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3267494334.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3267494334.png"
+                data-height="301"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3267494334"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Typography Tokens.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="b2100342-5649-4c88-ab92-7752a4fd279d"
+                data-media-type="file"
+            /></span>
+            <p>
+              To understand more on typography, refer our
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/3239807099/Typography"
+                data-linked-resource-id="3239807099"
+                data-linked-resource-version="20"
+                data-linked-resource-type="page"
+                >Typography</a
+              >
+              foundation.
+            </p>
+            <h3 id="DesignTokens-ElevationTokens">Elevation Tokens</h3>
+            <p>Elevation tokens apply shadow to an element.</p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Elevation Tokens.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3266446145.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3266446145.png"
+                data-height="301"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3266446145"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Elevation Tokens.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="b086e37c-d328-4ef7-960a-2421b439fb3d"
+                data-media-type="file"
+            /></span>
+            <p>
+              To understand more on elevations, refer our Elevation foundation.
+            </p>
+            <h3 id="DesignTokens-OpacityTokens">Opacity Tokens</h3>
+            <p>
+              Opacity tokens apply transparency to an element. Use
+              opacity-disabled for interactive components that are disabled
+              (such as disabled avatar or card), and opacity-loading to content
+              sitting underneath a loading spinner.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Opacity Tokens.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3266512091.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3266512091.png"
+                data-height="301"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3266512091"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Opacity Tokens.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="cc879077-b2a4-4fc7-9c4a-35e5bdb23bdc"
+                data-media-type="file"
+            /></span>
+            <p>To understand more on opacity, refer our Opacity foundation.</p>
+            <h3 id="DesignTokens-SpaceTokens">Space Tokens</h3>
+            <p>
+              Space tokens reduce decision making and allow for consistent
+              spacing between elements in a page layout. These tokens are
+              designed to be use for horizontal and vertical spacing, in a
+              variety of contexts.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Space Tokens.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3266512156.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3266512156.png"
+                data-height="301"
+                data-width="606"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3266512156"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Space Tokens.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="fdf0755e-22bb-4a69-b540-0b9a88d262f8"
+                data-media-type="file"
+            /></span>
+            <p>
+              To understand more on spacing system, refer our Spacing
+              foundation.
+            </p>
+            <div
+              class="confluence-information-macro confluence-information-macro-information"
+            >
+              <span
+                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+              ></span>
+              <div class="confluence-information-macro-body">
+                <p>
+                  To see all available tokens in GDS, refer our document
+                  <a
+                    href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/3266577008/Available+GDS+Tokens"
+                    rel="nofollow"
+                    >All GDS Token</a
+                  >
+                </p>
+              </div>
+            </div>
+            <h2 id="DesignTokens-TheminginGDS">Theming in GDS</h2>
+            <p>
+              One of the other huge benefits of using design tokens is that it
+              makes theming super easy and efficient. The fact that styling is
+              applied using the token names, the primitive values of these
+              tokens can be changed independently without making a change across
+              all their instances.
+            </p>
+            <p>
+              Referring the screenshot below, the primary button uses color
+              token ‘bg-button-primary’ and the color assigned to it is
+              different in different themes. Example, for Tachyon it is
+              primary-400 and for Olympus, it is primary-600 and when the theme
+              is switched the button changes it’s color from primary-400 to
+              primary-600 as they both are referenced from same
+              bg-button-primary token.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Theme Switching.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3263234592.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3263234592.png"
+                data-height="365"
+                data-width="783"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3263234592"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Theme Switching.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="498e9306-f31a-41b7-b453-00e403d7a1d1"
+                data-media-type="file"
+            /></span>
+            <p>
+              With the specialized color roles, we offer extensive
+              customizations in theming. Any components which has a specific
+              visual distinction is added as a specialized role, for example:
+              button. Primary button has same color as brand primary but with
+              specialized role in picture, we should be able to update the
+              button color in any other theme very easily. Refer to all
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/3248620461/Colors#Specialized-Roles"
+                rel="nofollow"
+                >specialized</a
+              >
+              color roles.
+            </p>
+            <h2 id="DesignTokens-UsingTokens">Using Tokens</h2>
+            <h3 id="DesignTokens-ForDevelopers">For Developers</h3>
+            <p>
+              All the design tokens (Global or Alias) are available by default
+              as part of the GDS library. Alias tokens set the default styling
+              of the components. Please don’t update such tokens. Else the
+              styling value updates made by the GDS team will not be
+              auto-updated across the components.
+            </p>
+            <h3 id="DesignTokens-ForDesigners">For Designers</h3>
+            <p>
+              Tokens are available as Figma variables. All the components use
+              tokens for styling a component. Like, setting the color, font,
+              radius, shadow and opacity. The spacing tokens are used to add the
+              spacing manually. Refrain from detaching the variables. Using the
+              GDS tokens ensures that you receive all the styling updates easily
+              across all your designs via library updates. Components with
+              detached styles does not get updated if a style value is updated
+              or a different theme is selected.
+            </p>
+            <h3 id="DesignTokens-UsingTokensacrossnon-GDSComponentsandLayouts">
+              Using Tokens across non-GDS Components and Layouts
+            </h3>
+            <p>
+              It is highly recommended to use the GDS Tokens across non-GDS
+              components as well throughout a product. Apart from bringing in
+              visual consistency and streamlining the front-end styling, it
+              would make it super easy to change the theme of a product or make
+              product- level styling updates.
+            </p>
+            <h2 id="DesignTokens-InteroperabilitywithTokens">
+              Interoperability with Tokens
+            </h2>
+            <p>
+              Since tokens are a technology and tools agnostic way of styling.
+              They can be used across any front-end technology, platform and
+              design tool. And they could also be exchanged between a design
+              tool and technology platform. This also allows us to have a single
+              source of truth as well as a common way of implementing styling.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Interoperability.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3262972312.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3262972312.png"
+                data-height="268"
+                data-width="783"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3262972312"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Interoperability.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="17d5f1ba-70c3-4d3c-bea2-b26d2df3b51c"
+                data-media-type="file"
+            /></span>
+            <h2 id="DesignTokens-ManagingtokensinFigma">
+              Managing tokens in Figma
+            </h2>
+            <p>
+              GDS utilizes Figma’s variables &amp; collections to create tokens
+              for different design properties. 
+            </p>
+            <p>
+              Variables in Figma store reusable values that can be applied to
+              all kinds of design properties and Collections are Figma’s name
+              for grouping these variables of the same types.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Tokens in GDS.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3263234556.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3263234556.png"
+                data-height="365"
+                data-width="783"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3263234556"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Tokens in GDS.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="a8452283-ef93-4054-94f9-ba9e7a0ee65c"
+                data-media-type="file"
+            /></span>
+            <h3 id="DesignTokens-ThemingusingFigmavariablesastokens">
+              Theming using Figma variables as tokens
+            </h3>
+            <p>
+              One of the huge benefit of using Figma variables and collections
+              is theming. Figma allows to create different versions of our
+              design based on a set of variables. These are called modes. If a
+              variable collection has multiple modes, then we can switch modes
+              on layers and elements to quickly change designs for different
+              contexts. 
+            </p>
+            <p>Here are a few ways we can use modes to switch contexts: </p>
+            <ul>
+              <li><p>Different color themes, like light and dark modes</p></li>
+              <li>
+                <p>Different languages to see how copy flows in designs</p>
+              </li>
+              <li>
+                <p>
+                  Devices sizes to see how elements look with different spacing
+                  and padding
+                </p>
+              </li>
+            </ul>
+            <p>
+              A variable collection's default mode is the left-most mode column
+              of that collection.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="Themes in GDS.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/design-tokens/3263136300.png?width=760"
+                data-image-src="/assets/attachments/design-tokens/3263136300.png"
+                data-height="365"
+                data-width="783"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3263136300"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="Themes in GDS.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="design-tokens"
+                data-linked-resource-container-version="9"
+                data-media-id="18ce89bb-022f-42a0-9658-78df7cd71da4"
+                data-media-type="file"
+            /></span>
+            <p />
+          </div>
+    </div>
+  </body>
+</html>

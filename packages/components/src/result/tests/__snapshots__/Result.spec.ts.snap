@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-result should work with \`size\` prop 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-font-size: 12px; --z-icon-size: 40px; --z-line-height: 1.6; --z-text-color: rgb(51, 54, 57); --z-description-text-color: var(--gds-color-text-neutral-light2); --z-title-font-size: 14px; --z-text-align: center; --z-title-font-weight: 500; --z-title-text-color: rgb(51, 54, 57); --z-variant-size: 32px; --z-icon-color: #2080f0;"`;
+
+exports[`z-result should work with \`size\` prop 2`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-font-size: 14px; --z-icon-size: 96px; --z-line-height: 1.6; --z-text-color: rgb(51, 54, 57); --z-description-text-color: var(--gds-color-text-neutral-light2); --z-title-font-size: 16px; --z-text-align: center; --z-title-font-weight: 500; --z-title-text-color: rgb(51, 54, 57); --z-variant-size: 40px; --z-icon-color: #2080f0;"`;
+
+exports[`z-result should work with \`size\` prop 3`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-font-size: 16px; --z-icon-size: 100px; --z-line-height: 1.6; --z-text-color: rgb(51, 54, 57); --z-description-text-color: var(--gds-color-text-neutral-light2); --z-title-font-size: 18px; --z-text-align: center; --z-title-font-weight: 500; --z-title-text-color: rgb(51, 54, 57); --z-variant-size: 50px; --z-icon-color: #2080f0;"`;
+
+exports[`z-result should work with \`size\` prop 4`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-font-size: 18px; --z-icon-size: 125px; --z-line-height: 1.6; --z-text-color: rgb(51, 54, 57); --z-description-text-color: var(--gds-color-text-neutral-light2); --z-title-font-size: 22px; --z-text-align: center; --z-title-font-weight: 500; --z-title-text-color: rgb(51, 54, 57); --z-variant-size: 64px; --z-icon-color: #2080f0;"`;

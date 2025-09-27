@@ -1,0 +1,7 @@
+export { default as ZTable, tableProps } from './src/Table'
+export { default as ZTh } from './src/Th'
+export { default as ZTr } from './src/Tr'
+export { default as ZTd } from './src/Td'
+export { default as ZThead } from './src/Thead'
+export { default as ZTbody } from './src/Tbody'
+export type { TableProps } from './src/Table'

@@ -1,0 +1,77 @@
+<markdown>
+# Large data
+
+In this example there are 5000 \* 2 \* 2 = 20000 entries.
+</markdown>
+
+<template>
+  <z-space vertical>
+    <z-space>
+      <z-space>
+        <z-switch v-model="checkStrategyIsChild" />Child Check Strategy
+      </z-space>
+      <z-space><z-switch v-model="cascade" />Cascade</z-space>
+      <z-space><z-switch v-model="showPath" />Show Path</z-space>
+      <z-space><z-switch v-model="hoverTrigger" />Hover Trigger</z-space>
+      <z-space><z-switch v-model="filterable" />Filterable</z-space>
+    </z-space>
+    <z-cascader
+      v-model="value"
+      placeholder="Meaningless Value"
+      :expand-trigger="hoverTrigger ? 'hover' : 'click'"
+      :options="options"
+      :cascade="cascade"
+      :check-strategy="checkStrategyIsChild ? 'child' : 'all'"
+      :show-path="showPath"
+      :filterable="filterable"
+    />
+  </z-space>
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
+import { CascaderOption } from '@zeta-gds/components'
+
+function getOptions (depth = 3, iterator = 1, prefix = '') {
+  const length = iterator === 1 ? 5000 : 2
+  const options: CascaderOption[] = []
+  for (let i = 1; i <= length; ++i) {
+    if (iterator === 1) {
+      options.push({
+        value: `v-${i}`,
+        label: `l-${i}`,
+        disabled: i % 5 === 0,
+        children: getOptions(depth, iterator + 1, '' + String(i))
+      })
+    } else if (iterator === depth) {
+      options.push({
+        value: `v-${prefix}-${i}`,
+        label: `l-${prefix}-${i}`,
+        disabled: i % 5 === 0
+      })
+    } else {
+      options.push({
+        value: `v-${prefix}-${i}`,
+        label: `l-${prefix}-${i}`,
+        disabled: i % 5 === 0,
+        children: getOptions(depth, iterator + 1, `${prefix}-${i}`)
+      })
+    }
+  }
+  return options
+}
+
+export default defineComponent({
+  setup () {
+    return {
+      checkStrategyIsChild: ref(true),
+      cascade: ref(true),
+      showPath: ref(true),
+      hoverTrigger: ref(false),
+      filterable: ref(false),
+      value: ref(null),
+      options: getOptions()
+    }
+  }
+})
+</script>

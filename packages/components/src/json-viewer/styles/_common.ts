@@ -1,0 +1,20 @@
+export default {
+  padding: '8px',
+  contentMarginRight: '32px',
+  labelPadding: '8px',
+  copyButtonMargin: '10px',
+  lineNumberTextColorDark: '#D4D7E6',
+  copyIconColorDark: '#FFFFFF',
+  chevronIconColorDark: '#FFFFFF',
+  bracketColorDark: '#FFFFFF',
+  keyColorDark: '#B27AFF',
+  numberValueColorDark: '#F09948',
+  booleanValueColorDark: '#7E99FF',
+  undefinedValueColorDark: '#9DA2BF',
+  stringValueColorDark: '#49CF55',
+  nullvalueColorDark: '#9DA2BF',
+  scrollbarColorDark: '#D4D7E6',
+  commentColorDark: '#F09948',
+  optionColorDark: '#2A4FF0',
+  bgColor: 'var(--gds-color-bg-neutral-light)'
+}

@@ -1,0 +1,126 @@
+import path from 'path'
+import { babel } from '@rollup/plugin-babel'
+import createDemoPlugin from './build/vite-plugin-demo.js'
+import dns from 'dns'
+
+dns.setDefaultResultOrder('verbatim')
+
+const themeAlias = [
+  {
+    find: '@zeta-gds/themes.aphrodite',
+    replacement: path.resolve(__dirname, '../../themes/aphrodite/src')
+  },
+  {
+    find: '@zeta-gds/themes.olympus',
+    replacement: path.resolve(__dirname, '../../themes/olympus/src')
+  },
+  {
+    find: '@zeta-gds/themes.optum',
+    replacement: path.resolve(__dirname, '../../themes/optum/src')
+  }
+]
+const alias = [
+  {
+    find: '@/',
+    replacement: path.resolve(__dirname, '../../packages/components/src')
+  },
+  {
+    find: '@zeta-gds/components',
+    replacement: path.resolve(__dirname, '../../packages/components/src')
+  }
+]
+
+const config = {
+  // base: './',
+  root: __dirname,
+  plugins: createDemoPlugin(),
+  resolve: {
+    // In production site build, we want to import @zeta-gds/components from node_modules
+    alias:
+      process.env.NODE_ENV !== 'production'
+        ? [...themeAlias, ...alias]
+        : [
+            ...alias,
+            {
+              find: 'vue',
+              replacement: 'vue/dist/vue.esm-bundler.js'
+            }
+          ]
+  },
+  define: {
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+    'process.env.NODE_ENV': `'${process.env.NODE_ENV}'`,
+    'process.env.APHRODITE': !!process.env.APHRODITE,
+    __DEV__: process.env.NODE_ENV !== 'production'
+  },
+  optimizeDeps: {
+    include: [
+      'async-validator',
+      'date-fns/esm',
+      'date-fns-tz/getTimezoneOffset',
+      'vue-content-loader',
+      'highlight.js',
+      'lodash-es',
+      'seemly',
+      'treemate',
+      'vue',
+      'vue-router',
+      'date-fns-tz',
+      'codesandbox/lib/api/define',
+      'grapheme-splitter',
+      'highlight.js/lib/core',
+      'highlight.js/lib/languages/javascript',
+      'highlight.js/lib/languages/python',
+      'highlight.js/lib/languages/cpp',
+      'highlight.js/lib/languages/xml',
+      '@vicons/ionicons5',
+      '@vicons/ionicons4',
+      '@vicons/fluent/Compose16Regular.js',
+      'date-fns/esm/locale/nb',
+      'date-fns/esm/locale/fr',
+      'date-fns/esm/locale/id',
+      'date-fns/esm/locale/de',
+      'date-fns/esm/locale/ja',
+      'date-fns/esm/locale/zh-CN',
+      'date-fns/esm/locale/en-US',
+      'date-fns/esm/locale/ru',
+      'date-fns/esm/locale/uk',
+      'date-fns/esm/locale/zh-TW',
+      'date-fns/esm/locale/es',
+      'date-fns/esm/locale/it',
+      'date-fns/esm/locale/en-GB',
+      'date-fns/esm/locale/pl',
+      'date-fns/esm/locale/eo',
+      'date-fns/esm/locale/sk',
+      'date-fns/esm/locale/pt-BR',
+      'date-fns/esm/locale/th',
+      'date-fns/esm/locale/ko',
+      'date-fns/esm/locale/nl',
+      'date-fns/esm/locale/ar'
+    ],
+    exclude: ['__INDEX__']
+  },
+  build: {
+    outDir: 'dist',
+    output: {
+      manualChunks: {
+        'grapheme-splitter': ['grapheme-splitter'],
+        katex: ['katex']
+      }
+    },
+    rollupOptions: {
+      plugins: [
+        babel({
+          babelHelpers: 'bundled'
+        })
+      ]
+    }
+  },
+  esbuild: {
+    jsx: 'transform',
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment'
+  }
+}
+
+export default config

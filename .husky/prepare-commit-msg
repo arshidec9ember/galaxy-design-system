@@ -1,0 +1,29 @@
+#!/bin/sh
+
+commit_message_file="$1"
+
+if [ -z "$commit_message_file" ]; then
+  echo "Error: Missing commit message."
+  exit 1
+fi
+
+# Function to trim leading and trailing whitespace
+trim_whitespace() {
+  echo "$1" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'
+}
+
+commit_message=$(grep -Ev '^\s*#' "$commit_message_file")
+
+# Read the commit message, trim whitespace, and ignore comment lines
+message=$(grep -Ev '^\s*#' "$commit_message_file" | tr -d '[:space:]')
+
+PURPLE='\033[0;35m'
+GREEN='\033[1;32m'
+NO_COLOR='\033[0m'
+
+if [ -n "$message" ]; then
+  echo "$PURPLE Commit message is:$GREEN $commit_message $NO_COLOR"
+  # Add your logic here if needed
+else
+  exec < /dev/tty && npx cz --hook || true
+fi

@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Form Fields documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              <style>
+                [data-colorid='mquu9pqi8f'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='mquu9pqi8f'] {
+                  color: #004eb3;
+                }
+                [data-colorid='gqed5rk7w7'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='gqed5rk7w7'] {
+                  color: #004eb3;
+                }
+                [data-colorid='fgcov19nsu'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='fgcov19nsu'] {
+                  color: #004eb3;
+                }
+                [data-colorid='r1n3cy3t9x'] {
+                  color: #97a0af;
+                }
+                html[data-color-mode='dark'] [data-colorid='r1n3cy3t9x'] {
+                  color: #505968;
+                }
+                [data-colorid='p4258njjfo'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='p4258njjfo'] {
+                  color: #004eb3;
+                }
+              </style>
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper"
+            ></span>
+            <h2 id="FormFieldsdocumentation-Anatomy">Anatomy</h2>
+            <p>
+              A form field is a compilation of many items that guide the user in
+              performing an input action,
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Field Container:</strong> By default, the container
+                  has white filled, which helps in creating contrast between the
+                  text field and surrounding content.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Label:</strong> Label text is used to inform users as
+                  to what information is requested for a text field.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Mandatory asterisk:</strong> To indicate that a field
+                  is required, display an asterisk (*) next to the label text
+                  and mention near the form that asterisks indicate required
+                  fields.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Input Value:</strong> Input value is the user's data
+                  entered into a text field.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Help Icon:</strong> A text field can have a help icon
+                  above the field to give extra context or instruction about
+                  what a user should input in the field.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Optional:</strong> Used as an indicator if the field
+                  is optional.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Error Text:</strong> This is used to communicate an
+                  error when the field requirements aren&rsquo;t met, prompting
+                  a user to adjust what they had initially input.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Character count: </strong>To indicate the number of
+                  characters the user will be able to input.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Icon:</strong> Trailing icon is mainly used for
+                  actions like erasing the text in the field with a cross icon,
+                  showing a password with an eye icon or giving voice input with
+                  a microphone icon, etc. It can also be used to notify users
+                  about valid inputs (if invalid there will be an error text).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Prepend/Append: </strong>Form fields contain different
+                  parameters that control and facilitate the user inputs.
+                </p>
+              </li>
+            </ul>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715912917.png"
+                data-image-src="/assets/attachments/form-fields/2715912917.png"
+                data-height="554"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715912917"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_anatomy.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="e482dd1e-5ee4-4f09-b4ca-2440c4aab67f"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h2 id="FormFieldsdocumentation-Variations">Variations</h2>
+            <p>
+              In GDS form fields are categorized into
+              <strong>8 Variants; </strong>Text field, Text area, Select field,
+              Combobox, Search, Password, File picker, and Date-time picker.
+              Each variant contains its own set of states and properties that
+              are configured based on the usage.
+            </p>
+            <p>
+              The components are further integrated with features allowing the
+              user to have better usability along with the Default type.
+            </p>
+            <div class="table-wrap">
+              <table
+                data-layout="default"
+                data-local-id="78283696-7304-4568-ac9c-fd046ee72f6c"
+                class="confluenceTable"
+              >
+                <colgroup>
+                  <col style="width: 97.14px" />
+                  <col style="width: 97.14px" />
+                  <col style="width: 97.14px" />
+                  <col style="width: 97.14px" />
+                  <col style="width: 97.14px" />
+                  <col style="width: 97.14px" />
+                  <col style="width: 97.14px" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="confluenceTh">
+                      <p><strong>Component Variations</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p style="text-align: center"><strong>Default</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p style="text-align: center"><strong>Prepend</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p style="text-align: center"><strong>Append</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p style="text-align: center">
+                        <strong>Mandatory</strong>
+                      </p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p style="text-align: center">
+                        <strong>Optional</strong>
+                      </p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p style="text-align: center">
+                        <strong>Char. count</strong>
+                      </p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>Text field</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>Text area</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>Select field</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>Combobox</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>Password</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>File picker</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>Date and time picker</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="confluenceTh"><p>Search</p></th>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span
+                          class="status-macro aui-lozenge aui-lozenge-success"
+                          >YES</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                    <td class="confluenceTd">
+                      <p style="text-align: center">
+                        <span class="status-macro aui-lozenge aui-lozenge-error"
+                          >NO</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715945845.png"
+                data-image-src="/assets/attachments/form-fields/2715945845.png"
+                data-height="1392"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715945845"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_variations.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="4c8eaa68-93eb-4a16-891a-e35415186783"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h2 id="FormFieldsdocumentation-States">States</h2>
+            <p>
+              Form field interactions aid users in understanding every state of
+              the component the user interacts with, each state represents an
+              action that is either performed or triggered in the course of form
+              filling.
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Normal state: </strong> Normal state is the default
+                  state of the component before the user interacts or performs
+                  any action over it
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Hover state:</strong> Hover state is a trigger point
+                  when the user interacts with the component by hovering over
+                  the component using the mouse cursor, here subtle change in
+                  color values indicates the action performed, and a state
+                  change.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Active state: </strong>Active state is triggered on
+                  the course when the user interacts with the component till he
+                  moves to the next field or clicks outside.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Filled state:</strong> A filled state of the component
+                  contains the information the user has inputted in the given
+                  field.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Focussed state: </strong>Focused is triggered when the
+                  user uses the keyboard to navigate to the field.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Disabled state:</strong> Disabled state is an inactive
+                  state of the component in which the user will not be able to
+                  interact with the component, a state change can be triggered
+                  by providing permission to edit or by performing a
+                  prerequisite action.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Error state: </strong>Upon performing validation on
+                  the given input the system throws an error aiding the user to
+                  enter the correct information.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Uploaded state: </strong> The uploaded state is
+                  equivalent to the filled state with information updated in the
+                  file picker component.
+                </p>
+              </li>
+            </ul>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715945851.png"
+                data-image-src="/assets/attachments/form-fields/2715945851.png"
+                data-height="1072"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715945851"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_states.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="4d8ceead-5867-44cd-bc9b-5cae344e7e4d"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h2 id="FormFieldsdocumentation-Behavior">Behavior</h2>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/form-fields/Form+Fields+documentation#Anatomical-behavior"
+                rel="nofollow"
+                ><span data-colorid="mquu9pqi8f">Anatomical behavior</span></a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/form-fields/Form+Fields+documentation#Layout-behavior"
+                rel="nofollow"
+                ><span data-colorid="gqed5rk7w7">Layout behavior</span></a
+              >
+            </p>
+            <p>
+              <a
+                href="https://zeta-tm.atlassian.net/wiki/spaces/GDS/pages/form-fields/Form+Fields+documentation#Component-behavior"
+                rel="nofollow"
+                ><span data-colorid="fgcov19nsu">Component behavior</span></a
+              >
+            </p>
+            <h3 id="FormFieldsdocumentation-Anatomicalbehavior">
+              Anatomical behavior
+            </h3>
+            <h4 id="FormFieldsdocumentation-Placeholdertext">
+              Place holder text
+            </h4>
+            <p>
+              Placeholder text provides hints or examples of what to enter.
+              Placeholder text disappears after the user begins entering data
+              into the input and should not contain crucial information.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715912925.png"
+                data-image-src="/assets/attachments/form-fields/2715912925.png"
+                data-height="700"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715912925"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_placeholdertext.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="cd0eaf9a-dece-401c-aeca-a2b43b00ef40"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Required/Optional">
+              Required/Optional
+            </h4>
+            <p>
+              Text fields can be marked as optional or required, depending on
+              the data input needed, Required/Optional field is marked with an
+              asterisk next to the form field label
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716598900.png"
+                data-image-src="/assets/attachments/form-fields/2716598900.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716598900"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_requiredoroptional.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="ed9319ca-6229-47d2-b337-19bd69bdce69"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Prepend/Append">
+              Prepend / Append
+            </h4>
+            <p>
+              Form fields can facilitate other actions other than just entering
+              the input value. To provide a guided journey to the user
+              Prepend/Append allows us to configure components with a set of
+              parameters that can control user input. Positioning and usage of
+              the Prepend/Append can vary depending upon the context of usage.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715945859.png"
+                data-image-src="/assets/attachments/form-fields/2715945859.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715945859"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_prepend&amp;append.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="42e29b65-cbbd-4a8d-b0d9-43901c7b8b97"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-HelpIcon">Help Icon</h4>
+            <p>
+              To give extra context or instruction about what a user should
+              input in the field a Help icon can be used to indicate additional
+              information near the field label, on mouse hover a Tooltip will
+              open along with the message/instructions.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2750054461.png"
+                data-image-src="/assets/attachments/form-fields/2750054461.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2750054461"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_helpicon.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="ea1d4581-494f-42ef-a451-9e77f84ebbb2"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Charactercount">Character count</h4>
+            <p>
+              Character count helps users know how much text they can enter when
+              there is a limit on the number of characters. The character count
+              is used in both the text field and text area, by default the count
+              is set to indefinite and can be specified based on need.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716598908.png"
+                data-image-src="/assets/attachments/form-fields/2716598908.png"
+                data-height="576"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716598908"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_charactercount.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="f65fc5c9-cfd1-4ea4-b156-d1f540eaf116"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              <em><span data-colorid="r1n3cy3t9x"> </span></em>
+            </p>
+            <h4 id="FormFieldsdocumentation-Singlelineerror">
+              Single line error
+            </h4>
+            <p>
+              Error text tells a user how to fix the error by re-stating the
+              input requirements or describing the necessary interaction. Try to
+              keep the tone of the error message short, clear, and helpful.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716598914.png"
+                data-image-src="/assets/attachments/form-fields/2716598914.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716598914"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_slerror.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="a34024e6-0bba-4e03-ae95-90de76e6257c"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Multi-lineerror">
+              Multi-line error
+            </h4>
+            <p>
+              A Multiline error acts similar to a single line error but is
+              triggered when multiple errors are found when the information is
+              entered, a multi-line error can wrap to form another line
+              descriptive up to two lines or it can be listed down as bullet
+              points.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715912933.png"
+                data-image-src="/assets/attachments/form-fields/2715912933.png"
+                data-height="573"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715912933"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_mlerror.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="6093e9a0-3c47-4c76-85cb-86e6c006d2f8"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h3 id="FormFieldsdocumentation-Layoutbehavior">Layout behavior</h3>
+            <h4 id="FormFieldsdocumentation-Textoverflow">Text overflow</h4>
+            <p>
+              When the field label is too long for the available horizontal
+              space, it wraps to form another line. The field text itself
+              truncates
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716598920.png"
+                data-image-src="/assets/attachments/form-fields/2716598920.png"
+                data-height="573"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716598920"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_textoverflow.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="b4324627-cac2-421f-aadf-1b0a573fc5f4"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Width">Width</h4>
+            <p>
+              The width of a text field can be customized appropriately for its
+              context.
+            </p>
+            <p>
+              If a form field is used inside containers like modals and side
+              sheets, it is advisable to use the component in full width. In the
+              case of a full-screen layout, a grid has to be used to structure
+              them symmetrically.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715945873.png"
+                data-image-src="/assets/attachments/form-fields/2715945873.png"
+                data-height="573"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715945873"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_width.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="a287979b-c008-453e-916e-a3efe7af217f"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Fieldgrouping">Field grouping</h4>
+            <p>
+              Mark the minority of text fields in a form as required or
+              optional. In a single form, mark only the required fields or only
+              the optional fields, depending on whichever is less frequent in
+              the entire form.
+            </p>
+            <p>
+              All fields are optional unless highlighted as mandatory or All
+              fields are mandatory unless highlighted as optional
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716338754.png"
+                data-image-src="/assets/attachments/form-fields/2716338754.png"
+                data-height="740"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716338754"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_fieldgrouping.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="d82de75a-f673-4285-90d3-c1c01b8bc8e8"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h3 id="FormFieldsdocumentation-Componentbehavior">
+              Component behavior
+            </h3>
+            <h4 id="FormFieldsdocumentation-TextField">Text Field</h4>
+            <p>
+              The text field allows users to input information through the
+              keyboard, the text field input is primarily used for long or short
+              information entries.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716338760.png"
+                data-image-src="/assets/attachments/form-fields/2716338760.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716338760"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_textfield.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="8332c235-664f-4620-bdde-8df42aff4b0b"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-SelectField">Select Field</h4>
+            <p>
+              The select field allows users to choose from a list of options in
+              a limited space. The list of options can change based on the
+              context. Those could be covered under popover component
+              documentation.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715912941.png"
+                data-image-src="/assets/attachments/form-fields/2715912941.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715912941"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_selectfield.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="afe0361f-38ee-496b-9ac8-3d7e4d108e02"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-ComboBox">Combo Box</h4>
+            <p>
+              Combo boxes combine a text entry with a picker menu, allowing
+              users to filter longer lists to only the selections matching a
+              query. This can either have a single select or multiple selects.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715912947.png"
+                data-image-src="/assets/attachments/form-fields/2715912947.png"
+                data-height="508"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715912947"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_combobox_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="dfca3c26-760b-4541-9957-322feb673822"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <p>
+              Based on the content, the width of the combo box can vary. If
+              there&rsquo;s enough width then preferably use full width but in
+              the case of fixed width, the height of the combo box will try to
+              adjust according to the content.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716338768.png"
+                data-image-src="/assets/attachments/form-fields/2716338768.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716338768"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_combobox_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="217418eb-984b-4bd1-ba0e-cb1f2dac8b22"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Passwordfield">Password field</h4>
+            <p>
+              The Password field, by default, contains hidden text that can only
+              be viewed by using the &ldquo;eye icon&rdquo; in place of the icon
+              placeholder provided to facilitate the &ldquo;Show/Hide
+              Password&rdquo; feature.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715912953.png"
+                data-image-src="/assets/attachments/form-fields/2715912953.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715912953"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_passwordfield.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="005beb29-6929-4e0c-8577-156403f77255"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-FilePicker">File Picker</h4>
+            <p>The file picker is used for inline single file uploading.</p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716338776.png"
+                data-image-src="/assets/attachments/form-fields/2716338776.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716338776"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_filepicker.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="3c05cdec-54e4-4c35-a4f0-f3834479e970"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Textarea">Text area</h4>
+            <p>
+              The text area lets a user input a longer amount of text than a
+              standard text field. It can include all of the standard validation
+              options supported by the text field component.
+            </p>
+            <p>
+              Text areas can display a character count indicator when the length
+              of the text entry needs to be kept under a predefined value.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2715912959.png"
+                data-image-src="/assets/attachments/form-fields/2715912959.png"
+                data-height="1212"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2715912959"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_behavior_textarea.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="39b9ccb2-a6a2-43f7-92b8-276471727a65"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p />
+            <h4 id="FormFieldsdocumentation-Date&amp;TimePicker">
+              Date &amp; Time Picker
+            </h4>
+            <p>
+              Date and time pickers allow users to select a single or a range of
+              dates and times. The picker allows the user to navigate the
+              previous and next set of dates or times.
+            </p>
+            <p>
+              GDS uses Day / Month / Year date format and 12-hour and 24-hour
+              time systems which are consistent wherever used.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2750021674.png"
+                data-image-src="/assets/attachments/form-fields/2750021674.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2750021674"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_datepicker.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="060ebb61-be32-4963-92bf-e50019717d62"
+                data-media-type="file" /></span
+            ><span
+              class="confluence-embedded-file-wrapper image-left-wrap-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-wrap-left"
+                width="340"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716925953.png?width=340"
+                data-image-src="/assets/attachments/form-fields/2716925953.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716925953"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_monthpicker.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="96916957-d4b6-421a-87d4-8d56e176a7a4"
+                data-media-type="file" /></span
+            ><span
+              class="confluence-embedded-file-wrapper image-right-wrap-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-wrap-right"
+                width="340"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716893185.png?width=340"
+                data-image-src="/assets/attachments/form-fields/2716893185.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716893185"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_yearpicker.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="551af967-0e5a-4cb8-9b63-0863acd7c6cd"
+                data-media-type="file" /></span
+            ><span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2749859294.png"
+                data-image-src="/assets/attachments/form-fields/2749859294.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2749859294"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_datepicker-2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="e76e0dd4-acd2-4ada-abe7-ff1672b39547"
+                data-media-type="file" /></span
+            ><span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716991489.png"
+                data-image-src="/assets/attachments/form-fields/2716991489.png"
+                data-height="646"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716991489"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_date&amp;timepicker.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="7d16e833-1cd9-4d08-96e3-6053fd15f94b"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h4 id="FormFieldsdocumentation-Search">Search</h4>
+            <p>
+              Search is the most commonly used way to find information. It is a
+              powerful tool when built with the right logic based on the
+              context.
+              <span data-colorid="p4258njjfo">Component page link</span>
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2717089793.png"
+                data-image-src="/assets/attachments/form-fields/2717089793.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2717089793"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="search_variations.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="5d45d5d7-3cb7-434c-b2b6-bf32ef5e9372"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h2 id="FormFieldsdocumentation-Usageguidelines">
+              Usage guidelines
+            </h2>
+            <h3 id="FormFieldsdocumentation-Do’s">Do&rsquo;s</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716893209.png"
+                data-image-src="/assets/attachments/form-fields/2716893209.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716893209"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_do_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="8437150c-129e-4bb0-919e-ad17e482cedd"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>Always show labels and helper text as placeholders.</p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2717024259.png"
+                data-image-src="/assets/attachments/form-fields/2717024259.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2717024259"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_do_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="c725b855-38ef-4d0d-a277-aab08e6e07f8"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>Always use the mentioned format for showing dates &amp; time.</p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2717089801.png"
+                data-image-src="/assets/attachments/form-fields/2717089801.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2717089801"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_do_3.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="c22057c2-a6b3-4077-8829-d7b2d657cc3f"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Error messages should be short and helpful. Try to use words that
+              the user can understand instead of going full technical.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2717057029.png"
+                data-image-src="/assets/attachments/form-fields/2717057029.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2717057029"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_do_4.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="05535629-a251-49d3-8163-9667c1399caa"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Use help text ( help icon ) to show hints, formatting, and
+              requirements.
+            </p>
+            <h3 id="FormFieldsdocumentation-Don’t">Don&rsquo;t</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2717024265.png"
+                data-image-src="/assets/attachments/form-fields/2717024265.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2717024265"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_dont_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="8219856e-6d25-4488-adce-2b7912463913"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Don&rsquo;t show important information in place of placeholder
+              text. For that use the Help icon.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716991495.png"
+                data-image-src="/assets/attachments/form-fields/2716991495.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716991495"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_dont_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="fe54af72-4474-49da-81f2-dd07afdbdd09"
+                data-media-type="file"
+            /></span>
+            <p>
+              Don&rsquo;t show important information in place of placeholder
+              text. For that use the Help icon.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2716599150.png"
+                data-image-src="/assets/attachments/form-fields/2716599150.png"
+                data-height="300"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2716599150"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_dont_3.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="a6b98098-da37-4adc-9b94-722419a29bcb"
+                data-media-type="file"
+            /></span>
+            <p>
+              Don&rsquo;t show important information in place of placeholder
+              text. For that use the Help icon.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/form-fields/2749859256.png"
+                data-image-src="/assets/attachments/form-fields/2749859256.png"
+                data-height="233"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2749859256"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="formfield_dont_4.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="form-fields"
+                data-linked-resource-container-version="14"
+                data-media-id="47e005da-688c-48b8-bb14-e50359b2799f"
+                data-media-type="file"
+            /></span>
+            <p>
+              Don&rsquo;t use a read-only state in place of a Disabled state.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

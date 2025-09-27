@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-icon should work with \`opacity\` prop 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-color: #000; --z-opacity: 5;"`;

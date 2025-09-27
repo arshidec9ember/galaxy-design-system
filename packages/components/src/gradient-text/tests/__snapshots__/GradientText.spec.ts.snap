@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-gradient-text should work with \`gradient\` prop 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-rotate: 252deg; --z-color-start: rgba(0, 0, 0, 0.6); --z-color-end: #000000; --z-font-weight: 500;"`;
+
+exports[`z-gradient-text should work with \`gradient\` prop 2`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-rotate: 252deg; --z-color-start: rgba(0, 0, 0, 0.6); --z-color-end: #000000; --z-font-weight: 500;"`;

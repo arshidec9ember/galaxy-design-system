@@ -1,0 +1,46 @@
+<markdown>
+# Basic
+</markdown>
+
+<template>
+  <z-watermark
+    content="Watermark"
+    cross
+    selectable
+    :font-size="16"
+    :line-height="16"
+    :width="192"
+    :height="128"
+    :x-offset="12"
+    :y-offset="28"
+    :rotate="-15"
+  >
+    <z-table :bordered="false" :hide-column-separator="false">
+      <thead>
+        <tr>
+          <th>...</th>
+          <th>...</th>
+          <th>...</th>
+          <th>...</th>
+          <th>...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </z-table>
+  </z-watermark>
+</template>

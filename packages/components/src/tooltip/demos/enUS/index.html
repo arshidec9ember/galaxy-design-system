@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Tooltip</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              Tooltip is a message box component that appears over elements such
+              as icons, links, etc. when a user hovers over such an element.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+            ></span>
+            <h2 id="Tooltip-Anatomy">Anatomy</h2>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="680"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958853333.png?width=680"
+                data-image-src="/assets/attachments/tooltip/2958853333.png"
+                data-height="191"
+                data-width="690"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958853333"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="tooltip_anatomy.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="fa9f18f6-2f48-41ae-9b73-9b183da43512"
+                data-media-type="file"
+            /></span>
+            <h2 id="Tooltip-Variations">Variations</h2>
+            <p>There are two variations for tooltip:</p>
+            <ol start="1">
+              <li>
+                <p>
+                  <strong>Tooltip without icon:</strong> This is the standard
+                  tooltip that displays only text on hover. This type of tooltip
+                  is useful when the information to be displayed is simple or
+                  the context of the tooltip is clear.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Tooltip with icon:</strong> This is a variation of a
+                  standard tooltip that includes a small icon alongside the
+                  text. The icon is typically used to provide visual cues to the
+                  user and can help to quickly convey the purpose or meaning of
+                  the tooltip, which can improve the overall user experience.
+                </p>
+              </li>
+            </ol>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="680"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958853499.png?width=680"
+                data-image-src="/assets/attachments/tooltip/2958853499.png"
+                data-height="191"
+                data-width="690"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958853499"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="tooltip_variation.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="dc908c2c-3e27-4096-bb92-140896104af0"
+                data-media-type="file"
+            /></span>
+            <h2 id="Tooltip-Placement">Placement</h2>
+            <p>
+              A tooltip is positioned in relation to its target. There are
+              twelve placement positions, which are set by the placement
+              property. Values of the placement property are as follows: top,
+              top left, top right, left, left top, left bottom, bottom, bottom
+              left, bottom right, right, right top, right bottom. The default
+              placement value is at the top.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958919048.png"
+                data-image-src="/assets/attachments/tooltip/2958919048.png"
+                data-height="538"
+                data-width="799"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958919048"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085310.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="859b5b7b-4d71-4793-b3c5-ff5616a77de9"
+                data-media-type="file"
+            /></span>
+            <h2 id="Tooltip-Behaviours">Behaviours</h2>
+            <h3 id="Tooltip-Onhover">On hover</h3>
+            <p>
+              Tooltips appear on hovering over an element. It appears with a
+              smooth “appear” animation style when hovered over. And disappears
+              with a smooth “disappear” animation when the cursor is moved away
+              from the element. The appear and disappear time can be configured
+              based on the usage. By default it appears and disappears
+              immediately.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2959212949.png"
+                data-image-src="/assets/attachments/tooltip/2959212949.png"
+                data-height="223"
+                data-width="797"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2959212949"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085528.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="cd538d27-f134-43a0-857b-3b186529d9e0"
+                data-media-type="file"
+            /></span>
+            <h3 id="Tooltip-Onclick">On click</h3>
+            <p>
+              Tooltips appear on click of an element. It is used to provide
+              feedback to users when an action has been completed. For example,
+              when a user clicks on a Copy icon, a tooltip can appear with the
+              text &quot;Copied&quot; alongside a checkmark icon on the left.
+              This provides the user with visual feedback that the copy action
+              was successful.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2959082774.png"
+                data-image-src="/assets/attachments/tooltip/2959082774.png"
+                data-height="191"
+                data-width="784"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2959082774"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="tooltip_behaviours_click (1).png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="41eb78c6-48cb-4143-aebc-d12fe26c84bd"
+                data-media-type="file"
+            /></span>
+            <h3 id="Tooltip-Textoverflow">Text overflow</h3>
+            <p>
+              By default, the maximum width of a tooltip is (230 px on desktop).
+              This can be customized to better fit the context. When the content
+              of the tooltip exceeds the maximum allocated width, it wraps onto
+              the next line.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958853359.png"
+                data-image-src="/assets/attachments/tooltip/2958853359.png"
+                data-height="223"
+                data-width="795"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958853359"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085550.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="7d4f156d-f908-4e76-944a-edb1fb3c3d4c"
+                data-media-type="file"
+            /></span>
+            <h3 id="Tooltip-Textalignment">Text alignment</h3>
+            <p>
+              The text alignment in tooltip by default uses left alignment and
+              center alignment accordingly based on the appearance of tooltip.
+              In general the left aligned text is used in top left, top right,
+              left, left top, left bottom, bottom left, bottom right, right,
+              right top, right bottom, meanwhile the center aligned text is used
+              in top, bottom only.
+            </p>
+            <h4 id="Tooltip-Textalignment-left">Text alignment - left</h4>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958853365.png"
+                data-image-src="/assets/attachments/tooltip/2958853365.png"
+                data-height="606"
+                data-width="793"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958853365"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085621.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="32dd365a-7128-41db-b102-f52a5c1d0d1c"
+                data-media-type="file"
+            /></span>
+            <h4 id="Tooltip-Textalignment-center">Text alignment - center</h4>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958984659.png"
+                data-image-src="/assets/attachments/tooltip/2958984659.png"
+                data-height="388"
+                data-width="794"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958984659"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085647.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="2cbda393-1093-4bc0-b883-c0947610d302"
+                data-media-type="file"
+            /></span>
+            <h2 id="Tooltip-UsageGuidelines">Usage Guidelines</h2>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958919087.png"
+                data-image-src="/assets/attachments/tooltip/2958919087.png"
+                data-height="159"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958919087"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085709.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="5866a31a-05d1-4439-bc6c-d0a5415bede6"
+                data-media-type="file" /></span
+            ><span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958919095.png"
+                data-image-src="/assets/attachments/tooltip/2958919095.png"
+                data-height="161"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958919095"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085757.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="58b14cdb-f3e5-4b39-b1f4-46efe979b9ab"
+                data-media-type="file" /></span
+            ><span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958919114.png"
+                data-image-src="/assets/attachments/tooltip/2958919114.png"
+                data-height="159"
+                data-width="795"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958919114"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085826.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="df4df9eb-8d4d-4766-a4c0-afb5b874cca0"
+                data-media-type="file" /></span
+            ><span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/tooltip/2958853375.png"
+                data-image-src="/assets/attachments/tooltip/2958853375.png"
+                data-height="158"
+                data-width="795"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2958853375"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230505-085849.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="tooltip"
+                data-linked-resource-container-version="3"
+                data-media-id="612c1a62-eba1-460b-a0f2-4cbf329c3486"
+                data-media-type="file"
+            /></span>
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

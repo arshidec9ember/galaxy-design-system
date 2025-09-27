@@ -1,0 +1,42 @@
+{
+  "name": "@zeta-gds/themes.aphrodite",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "version": "2.6.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://verdaccio.internal.olympus-world.zetaapps.in"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "seemly": "^0.3.8"
+  },
+  "peerDependencies": {
+    "@zeta-gds/components": ">= 1.0.3",
+    "vue": "~3.3"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.10",
+    "@zeta-gds/components": "workspace:^",
+    "rimraf": "^5.0.5",
+    "typescript": "5.1.3",
+    "vue": "~3.3"
+  },
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "pack-it": "pnpm pack",
+    "build": "tsc -b --force tsconfig.json",
+    "postbuild": "rimraf *.tsbuildinfo"
+  },
+  "author": {
+    "name": "Vishwajeet",
+    "email": "vishwajeetk@zeta.tech"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ]
+}

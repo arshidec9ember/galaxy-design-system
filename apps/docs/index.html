@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Galaxy Design Components</title>
+    <meta name="zeta-gds-components-style" />
+    <meta name="vueuc-style" />
+    <link
+      rel="stylesheet"
+      href="https://hercules-assets.olympus-world.zetaapps.in/common-assets/3.0.159/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/md-editor-v3/lib/style.css"
+    />
+    <link rel="icon" href="/assets/images/gdslogo.png" />
+  </head>
+  <body>
+    <script>
+      const path = window.location.pathname
+      const pathLocale = path?.startsWith?.('/en-US') ? 'en-US' : undefined
+      function deriveTitleFromLocale(locale = navigator.language) {
+        document.title = 'Galaxy Design Components: A Vue 3 Component Library'
+      }
+      deriveTitleFromLocale(pathLocale)
+    </script>
+    <div id="app"></div>
+    <script type="module" src="__INDEX__"></script>
+  </body>
+</html>

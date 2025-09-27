@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Alerts documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              <style>
+                [data-colorid='rxjt8z3qcz'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='rxjt8z3qcz'] {
+                  color: #004eb3;
+                }
+                [data-colorid='cf8i1212vf'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='cf8i1212vf'] {
+                  color: #004eb3;
+                }
+              </style>
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+            ></span>
+            <h2 id="Alertsdocumentation-Anatomy">Anatomy</h2>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720433113.png"
+                data-image-src="/assets/attachments/alerts/2720433113.png"
+                data-height="463"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720433113"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_anatomy.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="6d066a13-3f41-4c4f-93b8-7d3d27cc18d6"
+                data-media-type="file"
+            /></span>
+            <h2 id="Alertsdocumentation-Variations">Variations</h2>
+            <p>
+              All three Alert are further categorised into semantic variants;
+            </p>
+            <ol start="1">
+              <li>
+                <p>
+                  <strong>Information</strong>: is<strong> </strong>used to
+                  convey information that is neutral in nature and may not
+                  require as much attention from the user, represented with the
+                  color blue.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Success: </strong>is<strong> </strong>used to convey
+                  success or completion messages, represented with the color
+                  green.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Warning: </strong>is used to displaying warning and
+                  caution messages, represented with the color orange.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Danger: </strong>is used to alert users to an error or
+                  a critical scenario, represented with the color red.
+                </p>
+              </li>
+            </ol>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720269373.png"
+                data-image-src="/assets/attachments/alerts/2720269373.png"
+                data-height="656"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720269373"
+                data-linked-resource-version="4"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_semantic_variants.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="77080582-3306-4f13-8e17-e336cce8ab28"
+                data-media-type="file"
+            /></span>
+            <h2 id="Alertsdocumentation-Placement">Placement</h2>
+            <p>
+              Based on the different use cases the alerts are positioned in
+              <span
+                class="inline-comment-marker"
+                data-ref="f9ae6278-311f-4986-81a1-93aba22c96ba"
+                >two</span
+              >
+              different places -
+            </p>
+            <p>
+              <strong>Header - </strong> This placement shows a full-width alert
+              at the top of the page. It creates the space for alert by pushing
+              down the contents of the page (as opposed to an overlay). It is
+              used when information is more prominent in nature, or when a piece
+              of information needs to be displayed for a longer period of time.
+              For example,
+              <em
+                >&ldquo;Info on a scheduled service downtime can be displayed
+                until the service is live again.&rdquo;</em
+              >
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720139145.png"
+                data-image-src="/assets/attachments/alerts/2720139145.png"
+                data-height="380"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720139145"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_behaviour_header alert.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="a7020b0a-5e06-44d3-bb82-4d3f8f161733"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              <strong>Inline - </strong>This placement is to show the alert
+              related to a specific container or a section on a page. The alert
+              is generally displayed at the top of a container. The width of the
+              alert is flexible in this placement, it can be set relative to the
+              width of the container such that it expands to occupy the full
+              width of the container, or could also be fixed based on the grid
+              columns. They can be displayed with or without action and dismiss
+              buttons as required.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720335184.png"
+                data-image-src="/assets/attachments/alerts/2720335184.png"
+                data-height="1112"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720335184"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_behaviour_inlinealert.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="b99881de-ca6a-4662-b5a4-5c539b7f9c23"
+                data-media-type="file"
+            /></span>
+            <h2 id="Alertsdocumentation-Configuration">Configuration</h2>
+            <p>
+              Configurations are used to modify the alert component structure
+              depending upon the use case for which they are used. The below
+              mentioned configurations are available for alerts :
+            </p>
+            <h3 id="Alertsdocumentation-Actions">Actions</h3>
+            <p>
+              An alert banner ideally provides a way for a user to address an
+              issue with action. It can have an icon-only close button, a
+              secondary button with a contextual action to take, and a tertiary
+              button for an extra action to take.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720368393.png"
+                data-image-src="/assets/attachments/alerts/2720368393.png"
+                data-height="420"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720368393"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_behaviour_actions_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="cef28d7e-4239-42ee-a16d-d9e33e5d06da"
+                data-media-type="file" /></span
+            ><span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720139157.png"
+                data-image-src="/assets/attachments/alerts/2720139157.png"
+                data-height="428"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720139157"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_behaviour_actions_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="3fedede7-33c6-4a11-b6ee-6df107d989b5"
+                data-media-type="file"
+            /></span>
+            <h3 id="Alertsdocumentation-ActionPlacement">Action Placement</h3>
+            <p>
+              There are two possibilities for the action placement. They can
+              either horizontally aligned with the title and description or
+              below the description.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/3020423755.png"
+                data-image-src="/assets/attachments/alerts/3020423755.png"
+                data-height="473"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3020423755"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_action_placement.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="3ab775e3-5cf9-4a26-8df2-5ba31610be3b"
+                data-media-type="file"
+            /></span>
+            <h2 id="Alertsdocumentation-Behavior">Behavior</h2>
+            <ul>
+              <li>
+                <p><span data-colorid="cf8i1212vf">Dismissal</span></p>
+              </li>
+              <li>
+                <p><span data-colorid="rxjt8z3qcz">Text Overflow</span></p>
+              </li>
+            </ul>
+            <h3 id="Alertsdocumentation-Dismissal">Dismissal</h3>
+            <p>Alert can be dismissed in two ways,</p>
+            <p>
+              <strong>Auto Dismissal: </strong>Auto dismissal happens when the
+              user performs the required task in order to dismiss the alert
+              message from the section.
+            </p>
+            <p>
+              <strong>Voluntary Dismissal: </strong>Voluntary dismissal happens
+              when the user clicks on the dismiss action button &ldquo;x&rdquo;
+              or any other action buttons in order to close the alerts or
+              acknowledge the notification.
+            </p>
+            <h3 id="Alertsdocumentation-Textoverflow">Text overflow</h3>
+            <p>
+              When the Alert description text is too long for the available
+              container width, it wraps to the next line.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720269379.png"
+                data-image-src="/assets/attachments/alerts/2720269379.png"
+                data-height="480"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720269379"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_behaviour_overflow.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="051fd5db-8777-4fb8-899f-b7708f300065"
+                data-media-type="file"
+            /></span>
+            <h2 id="Alertsdocumentation-Usageguidelines">Usage guidelines</h2>
+            <h3 id="Alertsdocumentation-Do’s">Do&rsquo;s</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720335190.png"
+                data-image-src="/assets/attachments/alerts/2720335190.png"
+                data-height="276"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720335190"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_do_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="24c79e98-bacd-400b-a3b9-517e4165e3e3"
+                data-media-type="file"
+            /></span>
+            <p>
+              Keep an alert banner&rsquo;s message concise while still being
+              clear, using either a short phrase or a complete sentence that
+              describes what&rsquo;s happening and what someone needs to know.
+            </p>
+            <h3 id="Alertsdocumentation-Don’t">Don&rsquo;t</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720400572.png"
+                data-image-src="/assets/attachments/alerts/2720400572.png"
+                data-height="232"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720400572"
+                data-linked-resource-version="4"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_dont_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="a590ef1f-e424-49f7-8b8b-f09c8126be8b"
+                data-media-type="file"
+            /></span>
+            <p>
+              Don&rsquo;t use two actions with the same level of emphasis. Use
+              the button variations to create right emphasis and help users
+              clearly identify the primary action. Ideally one should be the
+              main action and the other one should be supportive.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/2720139151.png"
+                data-image-src="/assets/attachments/alerts/2720139151.png"
+                data-height="451"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2720139151"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_dont_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="ecf967cd-f026-4323-93dd-133302b04561"
+                data-media-type="file"
+            /></span>
+            <p>
+              Avoid showing many alerts at the same time. Sequencing can be used
+              to display multiple alerts one after the other.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/alerts/3026354401.png"
+                data-image-src="/assets/attachments/alerts/3026354401.png"
+                data-height="363"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3026354401"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="alert_dont_3.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="alerts"
+                data-linked-resource-container-version="11"
+                data-media-id="0d6d840e-c06c-4327-ac74-09b7f344f002"
+                data-media-type="file"
+            /></span>
+            <p>
+              Don&rsquo;t use an alert for floating notifications. Use a toast
+              instead.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

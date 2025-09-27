@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-blockquote should work with normal 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-font-size: 14px; --z-line-height: 1.6; --z-prefix-color: rgb(224, 224, 230); --z-text-color: rgb(51, 54, 57);"`;
+
+exports[`z-text should work with \`color\` prop 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`color\` prop 2`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: #2080f0; --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`color\` prop 3`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: #25c357; --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`color\` prop 4`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: #f0a020; --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`color\` prop 5`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: #d03050; --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`opacity\` prop 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`opacity\` prop 2`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`opacity\` prop 3`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 2; --z-text-transform: none;"`;
+
+exports[`z-text should work with \`opacity\` prop 4`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 3; --z-text-transform: none;"`;
+
+exports[`z-ul z-ol z-li should work with normal 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-font-size: 14px; --z-line-height: 1.6; --z-text-color: rgb(51, 54, 57); --z-li-margin: .25em 0 0 0; --z-ol-padding: 0 0 0 2em; --z-ul-padding: 0 0 0 2em;"`;
+
+exports[`z-ul z-ol z-li should work with normal 2`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-font-size: 14px; --z-line-height: 1.6; --z-text-color: rgb(51, 54, 57); --z-li-margin: .25em 0 0 0; --z-ol-padding: 0 0 0 2em; --z-ul-padding: 0 0 0 2em;"`;

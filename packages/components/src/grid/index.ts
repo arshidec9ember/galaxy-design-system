@@ -1,0 +1,5 @@
+export { default as ZGrid, gridProps } from './src/Grid'
+export type { GridProps } from './src/Grid'
+export { default as ZGridItem, gridItemProps } from './src/GridItem'
+export { default as ZGi, gridItemProps as giProps } from './src/GridItem'
+export type { GridItemProps } from './src/GridItem'

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Sidebar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper"
+            ></span>
+            <p />
+            <h2 id="Sidebar-Anatomy">Anatomy</h2>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889351390.png"
+                data-image-src="/assets/attachments/menu/2889351390.png"
+                data-height="467"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889351390"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-054552.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="9f7146c8-5be4-4c5f-86d1-9a514892cdd3"
+                data-media-type="file"
+            /></span>
+            <h2 id="Sidebar-Variations">Variations</h2>
+            <p>
+              GDS Sidebar has 3 variations, where depends upon the context we
+              can position it effectively. For one instances the Dark one is act
+              as a Primary, and followed by the Secondary sidebar. In some
+              instance there will be no Darker sidebar, so we might use
+              Secondary or File Explorer type.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889613669.png"
+                data-image-src="/assets/attachments/menu/2889613669.png"
+                data-height="385"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889613669"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-065608.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="d51d1c0d-7a01-423b-8cd2-c3cd044325b3"
+                data-media-type="file"
+            /></span>
+            <h2 id="Sidebar-Levels">Levels</h2>
+            <h3 id="Sidebar-Nodes">Nodes</h3>
+            <p>
+              The Nested of each accordion item is decided by the type of Node
+              used. We have two node, one is Parent Node and other one is the
+              Child Node. And the Parent and Child is node is differentiated
+              using the Chevron. If the level doesn’t have any child node, we
+              can disable the chevron so that it will act as a standalone level.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="680"
+                loading="lazy"
+                src="/assets/attachments/menu/2889122479.png?width=680"
+                data-image-src="/assets/attachments/menu/2889122479.png"
+                data-height="255"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889122479"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-070114.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="4119df76-33de-4380-a15e-4603126ed417"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-Levels.1">Levels</h3>
+            <p>
+              The main element of sidebar component is the Levels, where it will
+              act as an accordion item and we can expand and collapse the item
+              using the chevron to reveal the inner levels items. The Levels can
+              be configured to have upto '<strong>n</strong>’ th levels but as
+              per the GDS guideline maximum number of levels is restricted based
+              on the context, For eg. If the Sidebar is used a primary
+              navigation, it has a restriction of levels upto 3. If the sidebar
+              is used as the File Explorer context, there is no restriction on
+              number of levels.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889712053.png"
+                data-image-src="/assets/attachments/menu/2889712053.png"
+                data-height="316"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889712053"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-084246.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="5a25d8fa-96bd-4a0f-b8fa-f604bf172a1e"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h3 id="Sidebar-AccordionState">Accordion State</h3>
+            <p>
+              The state of each parent node is decided by the chevron icon, and
+              it has two state which are Collapsed and Expanded. If it is in
+              expanded state the inner levels of the parent node will be
+              visible.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889450005.png"
+                data-image-src="/assets/attachments/menu/2889450005.png"
+                data-height="182"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889450005"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-075938.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="896900fc-1c0c-4832-ad2a-aa0accc7dcd2"
+                data-media-type="file"
+            /></span>
+            <h2 id="Sidebar-Configurations">Configurations</h2>
+            <p>
+              GDS sidebar support various other features like a Switcher at the
+              top, Separator &amp; Subheading to create groups of menu items and
+              Search to search across the menu items, Selector, Icon,
+            </p>
+            <h3 id="Sidebar-Switcher">Switcher</h3>
+            <p>
+              Lets start with a switcher, It can be used to change settings on a
+              global level which can in turn change the sidebar options or the
+              content within. If Switcher is used, it has to be the top most
+              option and cannot be used in the middle of the Sidebar. Switch has
+              two options With and Without Interactive State.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889416932.png"
+                data-image-src="/assets/attachments/menu/2889416932.png"
+                data-height="346"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889416932"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-055240.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="18e1b098-2e8f-440f-8d31-57352c0cd798"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-Subheading">Subheading</h3>
+            <p>
+              Subheading is just a text to help group different sections on a
+              Sidebar. There are two types of Sub heading With/Without Search.
+            </p>
+            <p>
+              Subheading with search which is indicated by a search icon on the
+              right. On clicking the subheading, it turns into a search field,
+              letting users search for a particular sidebar element under the
+              said subheading.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889417242.png"
+                data-image-src="/assets/attachments/menu/2889417242.png"
+                data-height="329"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889417242"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-080528.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="c46928e2-7a7b-4d74-8b86-1eb4e8c4b64e"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-InteractionStates">Interaction States</h3>
+            <p>
+              Irrespective of the levels, each node has the interactive states.
+              And there is some visual changes as per the variation, whether
+              it's in Dark or Light.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889548443.png"
+                data-image-src="/assets/attachments/menu/2889548443.png"
+                data-height="385"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889548443"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-081633.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="cc71db11-8ea1-4076-81a7-f8f3f08e43eb"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-Icon">Icon</h3>
+            <p>
+              Depends upon the context the usage of icon differs. Incase of the
+              primary sidebar the icon should present only on the Level 1. And
+              incase of the Secondary sidebar we should provide an Icon. But in
+              case of the File Explorer, we need to provide icon for all the
+              levels to denote whether the folder is expanded or collapsed in
+              addition to the chevron.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889417308.png"
+                data-image-src="/assets/attachments/menu/2889417308.png"
+                data-height="316"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889417308"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-084256.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="33706afd-c3e9-412b-b9bb-f6495ab73fba"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h3 id="Sidebar-RHSContent(Optional)">RHS Content (Optional)</h3>
+            <p>
+              Each level has a content on the RHS and the type of content may
+              vary upon the usage, we have Badge which has an alphanumeric value
+              which is used to show any pending items or number of items inside
+              or even we can show ‘‘New’ text in case we want to highlight the
+              level. We can also have any statuses, Or any plain text to denote
+              something.
+            </p>
+            <h3 id="Sidebar-Action-OnHover(Optional)">
+              Action - On Hover (Optional)
+            </h3>
+            <p>
+              While clicking on the horizontal kebab menu which comes on hover,
+              it will open a popover. The popover might have the option to
+              create a new level inside it. And it also includes the rename and
+              delete option.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2883395868.png"
+                data-image-src="/assets/attachments/menu/2883395868.png"
+                data-height="858"
+                data-width="1592"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2883395868"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230201-123727.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="ebd0311d-913e-4903-9e17-ac939fa7cfba"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              After clicking on the Add new option, it will open an input field
+              so that we can give a custom name for the particular level which
+              we have added. Each level is accompanied by hover options as well
+              as the newly added level too. So if someone wants to delete the
+              newly added levels he can delete it from the popover triggered by
+              the Horizontal kebab -&gt; Delete. If the page is empty we can
+              proceed without any confirmation, if the page is filled with
+              anything or if it has any child levels we can prompt confirmation
+              so that it won’t delete accidentally.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2883395874.png"
+                data-image-src="/assets/attachments/menu/2883395874.png"
+                data-height="658"
+                data-width="1592"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2883395874"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230201-123732.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="36e964da-4934-48c6-b5f1-373374d3d0b6"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-Selector(Optional)">Selector (Optional)</h3>
+            <p>
+              Incase if we are in the bulk option mode or in edit mode, we can
+              enable the selector in each levels. The selector can be
+              configurable as Single select (Radio Button) or Multiselect
+              (Checkbox). This would mostly useful feature when we consider File
+              Explorer since we can bulk select the files and folders at ease.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889351740.png"
+                data-image-src="/assets/attachments/menu/2889351740.png"
+                data-height="196"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889351740"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-084605.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="2a30c55e-bd21-4f73-8c4d-15b7fa273d18"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-Rearrange/Move">Rearrange/Move</h3>
+            <p>
+              When the Drag &amp; Drop rearrange mode is enabled each node will
+              have the drag and drop icon which can be used to rearrange each
+              level item across the nested levels. This one also mostly useful
+              feature when we consider File Explorer since we can move the files
+              and folders at ease.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889122753.png"
+                data-image-src="/assets/attachments/menu/2889122753.png"
+                data-height="257"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889122753"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-084810.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="e02e35f7-eefb-4737-aaa6-8bf864513d41"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-Rename">Rename</h3>
+            <p>
+              We can rename the label of each node by clicking the horizontal
+              kebab menu which comes on hover, it will open a popover. It
+              includes the rename option.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889319063.png"
+                data-image-src="/assets/attachments/menu/2889319063.png"
+                data-height="199"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889319063"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-085341.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="18da534f-b7d7-4f07-8d6a-2d97e3238808"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h3 id="Sidebar-Divider">Divider</h3>
+            <p>
+              Each level item has a divider, but it will be only used to create
+              distinction between two sections of Sidebar. A Divider can be
+              followed by a Subheading or Level 1.
+            </p>
+            <h2 id="Sidebar-Behaviours">Behaviours</h2>
+            <h3 id="Sidebar-Width&amp;Height">Width &amp; Height</h3>
+            <p>
+              A sidebar is the most prominent navigation for most dashboards and
+              is present on every screen other than the landing page (if any).
+              The Primary sidebar obeys GDS grid structure and has the fixed
+              width of 244 px, also it never stretches or shrinks on different
+              view ports. But it has Resize option where we can enlarge the
+              width of the Sidebar manually as per the need. Height of the
+              sidebar is dependent on the viewports, as it will stretch
+              accordingly.
+            </p>
+            <h3 id="Sidebar-Collapsible(Optional)">Collapsible (Optional)</h3>
+            <p>
+              Sidebar can be collapsible using an action that will appear on
+              hover.
+            </p>
+            <h3 id="Sidebar-Expandable(Optional)">Expandable (Optional)</h3>
+            <p>
+              And also the sidebar is expandable using the same action, and the
+              action stays always visible whenever it’s in a collapsed state.
+              And the collapsed state also has hover functionality, whenever we
+              hover on the collapsed sidebar the floating sidebar will appear on
+              top of the content.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2883395882.png"
+                data-image-src="/assets/attachments/menu/2883395882.png"
+                data-height="1020"
+                data-width="1592"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2883395882"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230201-123750.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="b9de68b9-0476-4d9d-b4c9-fafd3c6e8404"
+                data-media-type="file"
+            /></span>
+            <h3 id="Sidebar-Resize(Optional)">Resize(Optional)</h3>
+            <p>
+              The width of the sidebar can be changed by the user using the
+              resize option on Hovering the edge of the sidebar. This would
+              mostly useful feature when we consider File Explorer since we need
+              to support n levels.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2889548571.png"
+                data-image-src="/assets/attachments/menu/2889548571.png"
+                data-height="361"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2889548571"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230207-090415.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="3cf6ca81-fea2-43f7-843a-13b31267b17b"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h3 id="Sidebar-Textoverflow">Text overflow</h3>
+            <p>
+              If the content exceeds the designated space then the content will
+              be truncated, although it is advisable to use terms that will fit
+              and avoid longer terms. Incase if we support resize option, the
+              text will utilise the required width.
+            </p>
+            <p>
+              Character limit<br />Level 1 (With right icon/badge): 14-20
+              characters<br />Level 1 (standard): 16-24 characters<br />Level 2
+              (With right icon/badge): 14-20 characters<br />Level 2 (standard):
+              16-24 characters<br />Level 3 (With right icon/badge): 13-19<br />Level
+              3 (standard): 16-23
+            </p>
+            <h2 id="Sidebar-UsageGuidelines">Usage Guidelines</h2>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/menu/2883329865.png"
+                data-image-src="/assets/attachments/menu/2883329865.png"
+                data-height="866"
+                data-width="1592"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2883329865"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230201-123756.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="menu"
+                data-linked-resource-container-version="2"
+                data-media-id="6f43212a-db15-4456-a2df-ca8cfa0240c9"
+                data-media-type="file"
+            /></span>
+            <p />
+            <ul>
+              <li>
+                <p>
+                  Navigation items should have concise names and fit within the
+                  allocated width in one line. Use names that are clear enough
+                  for the users to understand.
+                </p>
+              </li>
+              <li>
+                <p>
+                  When the names of navigation items are truncated, use a
+                  tooltip on hover to display the complete name.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Do not combine Icon and Text only styles of navigation for
+                  Level 1 items.
+                </p>
+              </li>
+            </ul>
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

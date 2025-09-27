@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Stepper</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper"
+            ></span>
+            <h2 id="Stepper-Anatomy">Anatomy</h2>
+            <p>Stepper consists of multiple puzzle pieces put together:</p>
+            <p>
+              <strong>Stepper: </strong>The main component that comprises of the
+              end state of what would be used
+            </p>
+            <p>
+              <strong>Stepper Item Group:</strong> Consists of the actual
+              stepper items joined and put together. There are few default steps
+              already provided to save time. EX: Vertical stepper item group
+              comes by default with 3, 4, 5, 6 stepper groups pre-defined
+            </p>
+            <p>
+              <strong>Stepper Item</strong>: Consists of the various elements
+              that makes a stepper item (Step counter, Progress Line, Label)
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2875851622.png"
+                data-image-src="/assets/attachments/stepper/2875851622.png"
+                data-height="501"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2875851622"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072358.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="149ddec3-b802-45e7-8593-22e16950a151"
+                data-media-type="file"
+            /></span>
+            <h2 id="Stepper-Elements">Elements</h2>
+            <h3 id="Stepper-StepperItemGroup">Stepper Item Group</h3>
+            <p>
+              Indicates a step in a sequence, highlights the current step,
+              displays the completed and incomplete steps. It also lets users
+              navigate between different steps. By default you can take
+              advantage of the pre-defined step groups (3-6)
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2875983021.png"
+                data-image-src="/assets/attachments/stepper/2875983021.png"
+                data-height="303"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2875983021"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072417.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="ac8b49d1-7c09-4610-8b68-741cae2baf81"
+                data-media-type="file"
+            /></span>
+            <p>
+              This component comes in two variations based on the orientation :
+              <strong>Horizontal &amp; Vertical</strong>
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2875851630.png"
+                data-image-src="/assets/attachments/stepper/2875851630.png"
+                data-height="568"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2875851630"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072437.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="d0db0b14-96e3-4aac-a4db-31e62f683e31"
+                data-media-type="file"
+            /></span>
+            <p>
+              On top level we have two states for the component:
+              <strong>Expanded &amp; Collapsed. </strong>
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Only Vertical Stepper </strong>comes with this
+                  interaction states.
+                </p>
+              </li>
+            </ul>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2875851636.png"
+                data-image-src="/assets/attachments/stepper/2875851636.png"
+                data-height="519"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2875851636"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072444.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="d0fa66c5-2477-49dc-9a99-07baac11c4b2"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>On Step level we have interactive states like :</p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Incomplete: </strong>A step indicator by default is in
+                  an incomplete state unless the user completes it.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Hovered: </strong>This state defines the visual
+                  feedback of a step when hovered over.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Focused: </strong>The focused state communicates the
+                  feedback when a user has highlighted a step using a keyboard
+                  or voice.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Selected: </strong>Selected step signifies the step a
+                  user is currently interacting with.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Completed: </strong>When a user completes a step the
+                  step transitions to a complete state.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Disabled: </strong>This state disables the step based
+                  on context and use-case.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Error: </strong> This state indicates if any error
+                  occurred in the specific step.
+                </p>
+              </li>
+            </ul>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2842626510.png"
+                data-image-src="/assets/attachments/stepper/2842626510.png"
+                data-height="565"
+                data-width="798"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2842626510"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20221205-182215.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="551127e4-585d-4597-918d-6d85be44d363"
+                data-media-type="file"
+            /></span>
+            <h2 id="Stepper-Variations">Variations</h2>
+            <p>
+              Stepper component only have two variations based on the
+              orientation and which orientation to use depends on the
+              availability of the real space.
+            </p>
+            <h3 id="Stepper-Horizontalstepper">Horizontal stepper</h3>
+            <p>
+              Consists of horizontal variation of stepper component and to be
+              used for smaller forms and processes. Mostly used in modals and
+              side-sheets.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2876015854.png"
+                data-image-src="/assets/attachments/stepper/2876015854.png"
+                data-height="519"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2876015854"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072458.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="90aaac59-876a-4438-8124-171818156cf1"
+                data-media-type="file"
+            /></span>
+            <h3 id="Stepper-Verticalstepper">Vertical stepper</h3>
+            <p>
+              Consists of vertical variation of stepper component and to be used
+              for larger forms mostly in wizards and full-page.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2875851642.png"
+                data-image-src="/assets/attachments/stepper/2875851642.png"
+                data-height="520"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2875851642"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072547.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="33079ca5-1081-47ec-bd82-d91bc00d4b30"
+                data-media-type="file"
+            /></span>
+            <h2 id="Stepper-Behaviours">Behaviours</h2>
+            <h3 id="Stepper-Navigateusingstepperitem:">
+              Navigate using stepper item:
+            </h3>
+            <p>
+              By default, the interaction of the stepper panel blocks the user
+              to jump between the steps unless the previous steps are complete.
+              However, users can use stepper item to navigate to different
+              steps. This help users to quickly jump to certain steps if they
+              want to.
+            </p>
+            <p>
+              Although this behaviour comes along with configuration. For
+              example if you are using this stepper component inside wizard with
+              restriction that previous steps needs to be completed before going
+              to next steps, then other than the Active and completed steps all
+              next steps will be in disabled state.
+            </p>
+            <div
+              class="panel"
+              style="
+                background-color: #eae6ff;
+                border-color: #998dd9;
+                border-width: 1px;
+              "
+            >
+              <div class="panelContent" style="background-color: #eae6ff">
+                <p>
+                  We suggest to stay away from this interaction unless it is
+                  necessary and provides a value add to the use case you are
+                  presented.
+                </p>
+              </div>
+            </div>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2876015866.png"
+                data-image-src="/assets/attachments/stepper/2876015866.png"
+                data-height="303"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2876015866"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072600.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="b5ae42a1-4a3a-4091-8cdc-ecb3bb440c87"
+                data-media-type="file"
+            /></span>
+            <h3 id="Stepper-TextOverflow:">Text Overflow:</h3>
+            <p>
+              If the content exceeds the designated space then the content will
+              be truncated, although it is advisable to use terms that will fit
+              and avoid longer terms.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2876114122.png"
+                data-image-src="/assets/attachments/stepper/2876114122.png"
+                data-height="303"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2876114122"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072608.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="5a6d0ff7-548d-4962-8def-d93fc375f8a6"
+                data-media-type="file"
+            /></span>
+            <h3 id="Stepper-Expand/Collapse">Expand/Collapse</h3>
+            <p>
+              Just like the sidebar, stepper can also be collapsed. This gives
+              the user the ability to hide stepper labels when it is not needed
+              and make use of more space.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/stepper/2876081112.png"
+                data-image-src="/assets/attachments/stepper/2876081112.png"
+                data-height="1000"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2876081112"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230120-072620.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="stepper"
+                data-linked-resource-container-version="4"
+                data-media-id="a000104f-9992-4d80-8e9f-a1820b14122c"
+                data-media-type="file"
+            /></span>
+            <h2 id="Stepper-UsageGuidelines">Usage Guidelines</h2>
+            <p />
+            <p>Use badge component to show the status if any.</p>
+            <p />
+            <p>Avoid using right aligned row item type for normal text.</p>
+            <p>Avoid using the subheading if there is no need</p>
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

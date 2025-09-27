@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-empty should work with \`size\` prop 1`] = `"--z-icon-size: 96px; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-empty-title-text-color: rgb(51, 54, 57); --z-empty-title-font-size: 16px; --z-empty-description-font-size: 14px; --z-empty-description-text-color: var(--gds-color-text-neutral-light2); --z-icon-color: rgba(194, 194, 194, 1); --z-actions-text-color: rgb(51, 54, 57);"`;
+
+exports[`z-empty should work with \`size\` prop 2`] = `"--z-icon-size: 64px; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-empty-title-text-color: rgb(51, 54, 57); --z-empty-title-font-size: 14px; --z-empty-description-font-size: 12px; --z-empty-description-text-color: var(--gds-color-text-neutral-light2); --z-icon-color: rgba(194, 194, 194, 1); --z-actions-text-color: rgb(51, 54, 57);"`;
+
+exports[`z-empty should work with \`size\` prop 3`] = `"--z-icon-size: 100px; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-empty-title-text-color: rgb(51, 54, 57); --z-empty-title-font-size: 18px; --z-empty-description-font-size: 16px; --z-empty-description-text-color: var(--gds-color-text-neutral-light2); --z-icon-color: rgba(194, 194, 194, 1); --z-actions-text-color: rgb(51, 54, 57);"`;
+
+exports[`z-empty should work with \`size\` prop 4`] = `"--z-icon-size: 96px; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-empty-title-text-color: rgb(51, 54, 57); --z-empty-title-font-size: 16px; --z-empty-description-font-size: 14px; --z-empty-description-text-color: var(--gds-color-text-neutral-light2); --z-icon-color: rgba(194, 194, 194, 1); --z-actions-text-color: rgb(51, 54, 57);"`;
+
+exports[`z-empty should work with \`size\` prop 5`] = `"--z-icon-size: 125px; --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-empty-title-text-color: rgb(51, 54, 57); --z-empty-title-font-size: 22px; --z-empty-description-font-size: 18px; --z-empty-description-text-color: var(--gds-color-text-neutral-light2); --z-icon-color: rgba(194, 194, 194, 1); --z-actions-text-color: rgb(51, 54, 57);"`;

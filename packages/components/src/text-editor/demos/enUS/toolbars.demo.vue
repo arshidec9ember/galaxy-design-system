@@ -1,0 +1,44 @@
+<markdown>
+ # Toolbar Options
+ </markdown>
+<template>
+  <div>
+    <ZTextEditor
+      :value="`### Hello, Markdown! `"
+      :read-only="false"
+      :editor-id="'toolbars-editor'"
+      :toolbars="[
+        'bold',
+        'underline',
+        'italic',
+        'title',
+        'strikeThrough',
+        'sub',
+        'sup',
+        'quote',
+        'unorderedList',
+        'orderedList',
+        'task',
+        'codeRow',
+        'code',
+        'link',
+        'image',
+        'table',
+        'mermaid',
+        'katex',
+        'revoke',
+        'next',
+        'save',
+        'pageFullscreen',
+        'fullscreen',
+        'preview',
+        'previewOnly',
+        'htmlPreview',
+        'catalog',
+        'github'
+      ]"
+      :auto-height="true"
+      :input-box-width="'50%'"
+    />
+  </div>
+</template>

@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-dropdown inverted style 1`] = `
+<div
+  class="z-dropdown-menu z-popover-shared z-dropdown"
+  style="--z-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05); --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-bezier-ease-in: cubic-bezier(.4, 0, 1, 1); --z-bezier-ease-out: cubic-bezier(0, 0, .2, 1); --z-font-size: 14px; --z-text-color: rgb(51, 54, 57); --z-color: rgb(0, 20, 40); --z-divider-color: #D4D7E6; --z-border-radius: var(--gds-border-radius-xs); --z-arrow-height: 6px; --z-arrow-offset: 10px; --z-arrow-offset-vertical: 10px; --z-padding: 8px 0px; --z-space: 4px; --z-space-arrow: 10px; --z-option-height: 34px; --z-option-prefix-width: 16px; --z-option-icon-prefix-width: 36px; --z-option-suffix-width: 16px; --z-option-icon-suffix-width: 32px; --z-option-icon-size: 16px; --z-option-icon-color: #7D83A6; --z-option-opacity-disabled: 0.4; --z-option-color-hover: #000000; --z-option-color-active: #000000; --z-option-text-color: #BBB; --z-option-text-color-hover: #FFF; --z-option-text-color-active: #FFF; --z-option-text-color-child-active: #FFF; --z-prefix-color: #BBB; --z-suffix-color: #BBB; --z-group-header-text-color: #AAA;"
+>
+  
+  
+  <div
+    class="z-dropdown-option"
+  >
+    <div
+      class="z-dropdown-option-body z-dropdown-option-body--group"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+        data-dropdown-option="true"
+      />
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        Names
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      />
+    </div>
+  </div>
+  
+  <div
+    class="z-dropdown-option"
+    data-dropdown-option="true"
+  >
+    <div
+      class="z-dropdown-option-body"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+      >
+        <!---->
+      </div>
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        
+        <!---->
+        <span
+          class="z-ellipsis"
+          style="text-overflow: ellipsis;"
+        >
+          <span>
+            <span
+              class="z-text z-text--no-tag"
+              style="--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"
+            >
+              Jay Gatsby
+            </span>
+          </span>
+        </span>
+        <!---->
+        
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      />
+    </div>
+    <!---->
+  </div>
+  <div
+    class="z-dropdown-divider"
+  />
+  <div
+    class="z-dropdown-option"
+    data-dropdown-option="true"
+  >
+    <div
+      class="z-dropdown-option-body z-dropdown-option-body--disabled"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+      >
+        <i
+          class="z-icon"
+          role="img"
+          style="--z-bezier: cubic-bezier(.4, 0, .2, 1);"
+        >
+          <svg
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect
+              fill="none"
+              height="256"
+              rx="16"
+              ry="16"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="32"
+              transform="rotate(180 256 208)"
+              width="448"
+              x="32"
+              y="80"
+            />
+            <path
+              d="M64 384h384"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M96 432h320"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <circle
+              cx="256"
+              cy="208"
+              fill="none"
+              r="80"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M480 160a80 80 0 0 1-80-80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M32 160a80 80 0 0 0 80-80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M480 256a80 80 0 0 0-80 80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M32 256a80 80 0 0 1 80 80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+          </svg>
+        </i>
+      </div>
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        
+        <!---->
+        <span
+          class="z-ellipsis"
+          style="text-overflow: ellipsis;"
+        >
+          <span>
+            <span
+              class="z-text z-text--no-tag"
+              style="--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"
+            >
+              Daisy Buchanan
+            </span>
+          </span>
+        </span>
+        <!---->
+        
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      />
+    </div>
+    <!---->
+  </div>
+  
+  
+  <div
+    class="z-dropdown-divider"
+  />
+  <div
+    class="z-dropdown-option"
+    data-dropdown-option="true"
+  >
+    <div
+      class="z-dropdown-option-body"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+      >
+        <!---->
+      </div>
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        
+        <!---->
+        <span
+          class="z-ellipsis"
+          style="text-overflow: ellipsis;"
+        >
+          <span>
+            <span
+              class="z-text z-text--no-tag"
+              style="--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"
+            >
+              Others
+            </span>
+          </span>
+        </span>
+        <!---->
+        
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      >
+        <i
+          class="z-icon"
+          role="img"
+          style="--z-bezier: cubic-bezier(.4, 0, .2, 1);"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.00001 15.875L12.88 11.995L9.00001 8.11498C8.81275 7.92814 8.70752 7.67449 8.70752 7.40998C8.70752 7.14546 8.81275 6.89181 9.00001 6.70498C9.39001 6.31498 10.02 6.31498 10.41 6.70498L15 11.295C15.39 11.685 15.39 12.315 15 12.705L10.41 17.295C10.02 17.685 9.39001 17.685 9.00001 17.295C8.62001 16.905 8.61001 16.265 9.00001 15.875Z"
+              fill="currentColor"
+            />
+          </svg>
+        </i>
+      </div>
+    </div>
+    
+    <div
+      class="z-dropdown-offset-container"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+  <!---->
+</div>
+`;
+
+exports[`z-dropdown shows arrow 1`] = `null`;
+
+exports[`z-dropdown shows menu after click 1`] = `
+<div
+  class="z-dropdown-menu z-popover-shared z-dropdown"
+  style="--z-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05); --z-bezier: cubic-bezier(.4, 0, .2, 1); --z-bezier-ease-in: cubic-bezier(.4, 0, 1, 1); --z-bezier-ease-out: cubic-bezier(0, 0, .2, 1); --z-font-size: 14px; --z-text-color: rgb(51, 54, 57); --z-color: #fff; --z-divider-color: #D4D7E6; --z-border-radius: var(--gds-border-radius-xs); --z-arrow-height: 6px; --z-arrow-offset: 10px; --z-arrow-offset-vertical: 10px; --z-padding: 8px 0px; --z-space: 4px; --z-space-arrow: 10px; --z-option-height: 34px; --z-option-prefix-width: 16px; --z-option-icon-prefix-width: 36px; --z-option-suffix-width: 16px; --z-option-icon-suffix-width: 32px; --z-option-icon-size: 16px; --z-option-icon-color: #7D83A6; --z-option-opacity-disabled: 0.4; --z-option-color-hover: #f1f2f8; --z-option-color-active: rgba(0, 0, 0, 0.1); --z-option-text-color: rgb(51, 54, 57); --z-option-text-color-hover: rgb(51, 54, 57); --z-option-text-color-active: #000000; --z-option-text-color-child-active: #000000; --z-prefix-color: rgb(51, 54, 57); --z-suffix-color: rgb(51, 54, 57); --z-group-header-text-color: rgb(118, 124, 130);"
+>
+  
+  
+  <div
+    class="z-dropdown-option"
+  >
+    <div
+      class="z-dropdown-option-body z-dropdown-option-body--group"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+        data-dropdown-option="true"
+      />
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        Names
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      />
+    </div>
+  </div>
+  
+  <div
+    class="z-dropdown-option"
+    data-dropdown-option="true"
+  >
+    <div
+      class="z-dropdown-option-body"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+      >
+        <!---->
+      </div>
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        
+        <!---->
+        <span
+          class="z-ellipsis"
+          style="text-overflow: ellipsis;"
+        >
+          <span>
+            <span
+              class="z-text z-text--no-tag"
+              style="--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"
+            >
+              Jay Gatsby
+            </span>
+          </span>
+        </span>
+        <!---->
+        
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      />
+    </div>
+    <!---->
+  </div>
+  <div
+    class="z-dropdown-divider"
+  />
+  <div
+    class="z-dropdown-option"
+    data-dropdown-option="true"
+  >
+    <div
+      class="z-dropdown-option-body z-dropdown-option-body--disabled"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+      >
+        <i
+          class="z-icon"
+          role="img"
+          style="--z-bezier: cubic-bezier(.4, 0, .2, 1);"
+        >
+          <svg
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect
+              fill="none"
+              height="256"
+              rx="16"
+              ry="16"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="32"
+              transform="rotate(180 256 208)"
+              width="448"
+              x="32"
+              y="80"
+            />
+            <path
+              d="M64 384h384"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M96 432h320"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <circle
+              cx="256"
+              cy="208"
+              fill="none"
+              r="80"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M480 160a80 80 0 0 1-80-80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M32 160a80 80 0 0 0 80-80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M480 256a80 80 0 0 0-80 80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+            <path
+              d="M32 256a80 80 0 0 1 80 80"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+            />
+          </svg>
+        </i>
+      </div>
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        
+        <!---->
+        <span
+          class="z-ellipsis"
+          style="text-overflow: ellipsis;"
+        >
+          <span>
+            <span
+              class="z-text z-text--no-tag"
+              style="--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"
+            >
+              Daisy Buchanan
+            </span>
+          </span>
+        </span>
+        <!---->
+        
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      />
+    </div>
+    <!---->
+  </div>
+  
+  
+  <div
+    class="z-dropdown-divider"
+  />
+  <div
+    class="z-dropdown-option"
+    data-dropdown-option="true"
+  >
+    <div
+      class="z-dropdown-option-body"
+    >
+      <div
+        class="z-dropdown-option-body__prefix z-dropdown-option-body__prefix--show-icon"
+      >
+        <!---->
+      </div>
+      <div
+        class="z-dropdown-option-body__label"
+        data-dropdown-option="true"
+      >
+        
+        <!---->
+        <span
+          class="z-ellipsis"
+          style="text-overflow: ellipsis;"
+        >
+          <span>
+            <span
+              class="z-text z-text--no-tag"
+              style="--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-text-color: rgb(51, 54, 57); --z-font-weight-strong: 500; --z-font-family-mono: SFMono-Regular, Menlo, Consolas, Courier, monospace; --z-code-border-radius: var(--gds-border-radius-xxs); --z-code-text-color: rgb(51, 54, 57); --z-code-color: rgb(244, 244, 248); --z-code-border: 1px solid #0000; --z-text-opacity: 1; --z-text-transform: none;"
+            >
+              Others
+            </span>
+          </span>
+        </span>
+        <!---->
+        
+      </div>
+      <div
+        class="z-dropdown-option-body__suffix z-dropdown-option-body__suffix--has-submenu"
+        data-dropdown-option="true"
+      >
+        <i
+          class="z-icon"
+          role="img"
+          style="--z-bezier: cubic-bezier(.4, 0, .2, 1);"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.00001 15.875L12.88 11.995L9.00001 8.11498C8.81275 7.92814 8.70752 7.67449 8.70752 7.40998C8.70752 7.14546 8.81275 6.89181 9.00001 6.70498C9.39001 6.31498 10.02 6.31498 10.41 6.70498L15 11.295C15.39 11.685 15.39 12.315 15 12.705L10.41 17.295C10.02 17.685 9.39001 17.685 9.00001 17.295C8.62001 16.905 8.61001 16.265 9.00001 15.875Z"
+              fill="currentColor"
+            />
+          </svg>
+        </i>
+      </div>
+    </div>
+    
+    <div
+      class="z-dropdown-offset-container"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+  <!---->
+</div>
+`;

@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./src/tsconfig.esm.json"
+    }
+    // {
+    //   "path": "./themes/aphrodite/tsconfig.esm.json"
+    // }
+  ]
+}

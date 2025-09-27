@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Text Input</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper"
+            ></span>
+            <p />
+            <h2 id="TextInput-Anatomy">Anatomy</h2>
+            <h3 id="TextInput-TextField">Text Field</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760442815.png"
+                data-image-src="/assets/attachments/input/2760442815.png"
+                data-height="574"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760442815"
+                data-linked-resource-version="8"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_anatomy_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="96bf72d0-8216-4fcf-b2fc-5e36a73ea675"
+                data-media-type="file"
+            /></span>
+            <h3 id="TextInput-PasswordField">Password Field</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760410421.png"
+                data-image-src="/assets/attachments/input/2760410421.png"
+                data-height="322"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760410421"
+                data-linked-resource-version="5"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_anatomy_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="721a4c09-c940-4243-831b-fa6e65cf3cc7"
+                data-media-type="file"
+            /></span>
+            <h2 id="TextInput-Variations">Variations</h2>
+            <p>
+              A text input component is classified into two types based on
+              usage.
+            </p>
+            <h3 id="TextInput-TextField.1">Text Field</h3>
+            <p>
+              A text field component is used to display, input, or edit
+              alphanumeric values.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760475842.png"
+                data-image-src="/assets/attachments/input/2760475842.png"
+                data-height="218"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760475842"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_variation_textfield.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="1ccc9399-23c8-407a-a550-37d9b4e4ae94"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h3 id="TextInput-Password">Password</h3>
+            <p>
+              A Password field component is the same as the text field, with
+              added functionality of masking the characters and a toggle button
+              to hide/show the mask/characters.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760410427.png"
+                data-image-src="/assets/attachments/input/2760410427.png"
+                data-height="218"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760410427"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_variation_password.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="19c45eb3-6f0f-4e71-aaeb-cad1016a9b51"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h2 id="TextInput-States">States</h2>
+            <p>
+              Interactions aid users in understanding every state of the
+              component the user interacts with, each state represents an action
+              that is either performed or triggered in the course of form
+              filling.
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Default: </strong>The default state is a state zero of
+                  the component before the user interacts or performs any action
+                  over it.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Hovered:</strong> It defines the visual feedback of
+                  the fields when hovered over.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Focused: </strong>Focused is triggered when a field is
+                  activated by either clicking or navigating to it using the
+                  keyboard or voice.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Filled:</strong> It represents the filled state of a
+                  field with the characters.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Disabled:</strong> It is an inactive state in which
+                  the user can not interact with the component. A state change
+                  can be triggered by providing permission to edit or by
+                  performing a prerequisite action.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Read-only:</strong> It is an inactive state in which
+                  the user can see and read the information displayed in it. But
+                  cannot edit it.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Error: </strong>It represents the error and highlights
+                  the field to aid the user to enter the correct information. It
+                  is triggered when the field validation fails.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Success: </strong>It represents the success and
+                  highlights the field and provides feedback on the correct
+                  information. It is triggered when the field validation is
+                  successful.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Error: </strong>It represents the warning and
+                  highlights the field and provides feedback to enter the
+                  appropriate information. It is triggered when the field
+                  validation is partially correct.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Password - Hidden: </strong>The password-hidden state
+                  masks the characters entered by the user for security
+                  purposes.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Password - Revealed: </strong>The password reveal
+                  state shows the characters entered by the user to allow them
+                  to verify the password.
+                </p>
+              </li>
+            </ul>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760377614.png"
+                data-image-src="/assets/attachments/input/2760377614.png"
+                data-height="1444"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760377614"
+                data-linked-resource-version="6"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_states.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="a547edad-9c11-4afc-b134-61b05e80c970"
+                data-media-type="file"
+            /></span>
+            <h2 id="TextInput-Behavior">Behavior</h2>
+            <h3 id="TextInput-TextField.2">Text Field</h3>
+            <p>
+              When a field is focused the placeholder text is hidden to allow
+              the users to focus on entering the information.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760410433.png"
+                data-image-src="/assets/attachments/input/2760410433.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760410433"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_behavior_textfield.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="ad0da9e9-3117-4ca5-a1e2-2b39761f87f7"
+                data-media-type="file"
+            /></span>
+            <h3 id="TextInput-CharacterCount">Character Count</h3>
+            <p>
+              When a character count is set for input, it is displayed in the
+              top right corner of the field. It helps the users view the number
+              of characters allowed and the number of characters entered.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760475852.png"
+                data-image-src="/assets/attachments/input/2760475852.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760475852"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_behavior_charactercount.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="97d2a807-964e-44ea-9eb2-38f45c78ee24"
+                data-media-type="file"
+            /></span>
+            <h3 id="TextInput-PasswordField.1">Password Field</h3>
+            <p>
+              The Password field by default contains hidden text that can be
+              viewed by using the eye icon toggle button. Toggling it on reveals
+              the password, toggling it off hides it again.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760377620.png"
+                data-image-src="/assets/attachments/input/2760377620.png"
+                data-height="328"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760377620"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_behavior_passwordfield.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="46ff06d3-fce0-4bf3-9d3b-311a60b56c43"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h2 id="TextInput-UsageGuidelines">Usage Guidelines</h2>
+            <h3 id="TextInput-Do’s">Do’s</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760377626.png"
+                data-image-src="/assets/attachments/input/2760377626.png"
+                data-height="253"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760377626"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_do_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="0a6a025f-9098-48fc-ba78-ad612454cd7b"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Display the labels and placeholders to provide context to the
+              users.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760442833.png"
+                data-image-src="/assets/attachments/input/2760442833.png"
+                data-height="236"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760442833"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_do_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="3a14c109-de0c-4b27-9688-cb164bd4915a"
+                data-media-type="file"
+            /></span>
+            <p>
+              Error messages should be short and helpful. Try to use
+              user-friendly words instead of technical jargon.
+            </p>
+            <h3 id="TextInput-Don&#39;t">Don't </h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760442839.png"
+                data-image-src="/assets/attachments/input/2760442839.png"
+                data-height="253"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760442839"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_dont_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="873ae441-cd39-4d2b-9a74-8fe5e39d0d84"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Don’t show important information as placeholder text. Use the Help
+              icon instead.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/input/2760442845.png"
+                data-image-src="/assets/attachments/input/2760442845.png"
+                data-height="253"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2760442845"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="textinput_dont_4.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="input"
+                data-linked-resource-container-version="16"
+                data-media-id="5f2ad807-6f69-4a1c-8532-17dff65189bb"
+                data-media-type="file"
+            /></span>
+            <p />
+            <p>
+              Don’t use a read-only state for the purpose of disabling a field.
+              Use the disabled state instead.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

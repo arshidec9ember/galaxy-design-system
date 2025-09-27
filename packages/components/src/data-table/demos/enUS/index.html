@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Table documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              <style>
+                [data-colorid='il4x3d9ox9'] {
+                  color: #0747a6;
+                }
+                html[data-color-mode='dark'] [data-colorid='il4x3d9ox9'] {
+                  color: #5999f8;
+                }
+                [data-colorid='r72itnq38q'] {
+                  color: #0747a6;
+                }
+                html[data-color-mode='dark'] [data-colorid='r72itnq38q'] {
+                  color: #5999f8;
+                }
+              </style>
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper"
+            ></span>
+            <h2 id="Tabledocumentation-Anatomy">Anatomy</h2>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2748940710.png"
+                data-image-src="/assets/attachments/data-table/2748940710.png"
+                data-height="337"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2748940710"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220623-074257.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="3ab96a6f-201d-48eb-9494-d5f77a0f30e2"
+                data-media-type="file"
+            /></span>
+            <p />
+            <ul>
+              <li>
+                <p>
+                  <strong>Column Header:</strong> Title for the column with the
+                  options to sort the column or to perform column-related
+                  operations.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Cells:</strong> Cells are smallest unit of a table
+                  that displays data in a specific format.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Rows:</strong> Horizontal stacking of cells. Row
+                  operations are applied on rows (e.g. Selecting a row).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Columns: </strong>Vertical stacking of cells. Column
+                  operations are applied on columns (e.g. Column sort).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Sort indicator: </strong>It indicates that a column is
+                  sortable.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Column Action: </strong>It contains actions that are
+                  contextual to the column.
+                </p>
+              </li>
+            </ul>
+            <h2 id="Tabledocumentation-Supporteddatatypesinthetablecell">
+              Supported data types in the table cell
+            </h2>
+            <p>
+              By default, tables support different data types to display a range
+              of content.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2746679753.png"
+                data-image-src="/assets/attachments/data-table/2746679753.png"
+                data-height="811"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2746679753"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220621-074902.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="710ad79b-d47a-40a0-a465-debccc729175"
+                data-media-type="file"
+            /></span>
+            <p><strong>Text:</strong> Used to display text information.</p>
+            <p>
+              The text can be either left-aligned (to display general text data
+              or <strong>qualitative numeric data</strong>) or Right aligned (to
+              display <strong>quantitative numerical data</strong>).
+            </p>
+            <p>
+              Here are examples of qualitative vs quantitative numerical data:
+            </p>
+            <div class="table-wrap">
+              <table
+                data-layout="default"
+                data-local-id="a400d064-0fb9-41eb-9d7e-b1b9b70ab30c"
+                class="confluenceTable"
+              >
+                <colgroup>
+                  <col style="width: 380px" />
+                  <col style="width: 380px" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="confluenceTh">
+                      <h4 id="Tabledocumentation-Quantitativenumbers">
+                        Quantitative numbers
+                      </h4>
+                    </th>
+                    <th class="confluenceTh">
+                      <h4 id="Tabledocumentation-Quantitativenumbers.1">
+                        Quantitative numbers
+                      </h4>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="confluenceTd"><p>Date</p></td>
+                    <td class="confluenceTd">
+                      <p>Amounts (money, quantities)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="confluenceTd"><p>Zip/Postal code</p></td>
+                    <td class="confluenceTd"><p>Measures</p></td>
+                  </tr>
+                  <tr>
+                    <td class="confluenceTd"><p>Phone number</p></td>
+                    <td class="confluenceTd"><p>Percentages</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              <strong>Icon + Text: </strong>Used to display text information
+              with a supported icon. Again it can be Left aligned and Right
+              aligned.
+            </p>
+            <p>
+              <strong>Image + Text: </strong>Used to display text information
+              with a supported image. Again it can be Left aligned and Right
+              aligned. The image can be configured to be 1:1 or 16:9.
+            </p>
+            <p>
+              <strong>Badge Group:</strong> It is used to display badges. More
+              than one badge can be displayed. All types of badges are
+              supported.
+            </p>
+            <p>
+              <strong>List: </strong>It is used to display a list of items. More
+              than one list item can be displayed.
+            </p>
+            <p>
+              <strong>Avatar: </strong>It is used to display the Avatar of a
+              user.
+            </p>
+            <p>
+              <strong>Status: </strong>Used to display the Status Indicator. All
+              variations of the status indicator are supported.
+            </p>
+            <p>
+              <strong>Link:</strong> Used to display links both internal and
+              external links are supported.
+            </p>
+            <p>
+              <strong>Action: </strong>Used to display row-level action, all
+              types of actions are supported.
+            </p>
+            <h2 id="Tabledocumentation-States:">States :</h2>
+            <p>In the table, Only the Column header and Rows have states.</p>
+            <h3 id="Tabledocumentation-TableRows:">Table Rows:</h3>
+            <p>It supports three states:</p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2746876362.png"
+                data-image-src="/assets/attachments/data-table/2746876362.png"
+                data-height="384"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2746876362"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220621-075104.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="b11a5d5c-9f97-4662-b83c-32a119c5a85a"
+                data-media-type="file"
+            /></span>
+            <ul>
+              <li>
+                <p>
+                  The table&rsquo;s row hover state can help your user visually
+                  scan the data in a row. The hover state is not interactive.
+                </p>
+              </li>
+              <li>
+                <p>
+                  A table row will only transition to a selected state when a
+                  selection (Whether single select or multi-select) is performed
+                  on the row. This helps users easily identify the selected
+                  rows.
+                </p>
+              </li>
+            </ul>
+            <h3 id="Tabledocumentation-ColumnHeader:">Column Header:</h3>
+            <p>
+              By default column headers have all the common states: Default,
+              Hover, Focused, and Pressed. However, if sorting is disabled then
+              the column header has only Default and Hover states (Hover state,
+              in this case, is non-interactive)
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2745960671.png"
+                data-image-src="/assets/attachments/data-table/2745960671.png"
+                data-height="282"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2745960671"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220621-082250.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="eea47960-bc2f-4242-bbfa-14114b8af737"
+                data-media-type="file"
+            /></span>
+            <h2 id="Tabledocumentation-Configurations:">Configurations:</h2>
+            <p>
+              GDS Table can be configured with Top bar and Pagination to enable
+              more functionalities.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2748186701.png"
+                data-image-src="/assets/attachments/data-table/2748186701.png"
+                data-height="488"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2748186701"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220622-094053.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="6568388c-dbbd-41be-89d9-dcfbe82987c7"
+                data-media-type="file"
+            /></span>
+            <h3 id="Tabledocumentation-Pagination:">Pagination:</h3>
+            <p>
+              Pagination divides table data into separate pages. Pagination
+              indicates the current page in view and offers controls to
+              incrementally navigate to the previous or next page. See
+              the&nbsp;<span data-colorid="r72itnq38q"><u>pagination</u></span
+              >&nbsp;component for further guidelines.
+            </p>
+            <h3 id="Tabledocumentation-Topbar:">Top bar:</h3>
+            <p>
+              Table Name and contextual action can be configured in Top-Bar. See
+              the&nbsp;<span data-colorid="il4x3d9ox9"
+                ><u>Top-bar</u>&nbsp;</span
+              >component for further guidelines.
+            </p>
+            <h2 id="Tabledocumentation-MinandMaxSizes:">Min and Max Sizes:</h2>
+            <p>
+              Some size properties are applied to table cells to prevent the
+              breaking of the table on certain screen sizes.
+            </p>
+            <div class="table-wrap">
+              <table
+                data-layout="default"
+                data-local-id="2d5bc2b8-a293-457e-87a4-e53efe00cab6"
+                class="confluenceTable"
+              >
+                <colgroup>
+                  <col style="width: 187px" />
+                  <col style="width: 147px" />
+                  <col style="width: 145px" />
+                  <col style="width: 141px" />
+                  <col style="width: 140px" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th class="confluenceTh">
+                      <p><strong>Type</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p><strong>Min Width</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p><strong>Max Width</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p><strong>Min Height</strong></p>
+                    </th>
+                    <th class="confluenceTh">
+                      <p><strong>Max height</strong></p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="confluenceTd">
+                      <p>Table Cell with only sorting enabled</p>
+                    </td>
+                    <td class="confluenceTd"><p>94px</p></td>
+                    <td class="confluenceTd"><p>Depends on content</p></td>
+                    <td class="confluenceTd"><p>48px</p></td>
+                    <td class="confluenceTd"><p>Depends on content</p></td>
+                  </tr>
+                  <tr>
+                    <td class="confluenceTd">
+                      <p>Table Cell with both sorting and action enabled</p>
+                    </td>
+                    <td class="confluenceTd"><p>122px</p></td>
+                    <td class="confluenceTd"><p>Depends on content</p></td>
+                    <td class="confluenceTd"><p>48px</p></td>
+                    <td class="confluenceTd"><p>Depends on content</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h2 id="Tabledocumentation-Behavior:">Behavior:</h2>
+            <h3 id="Tabledocumentation-Sorting:">Sorting:</h3>
+            <p>
+              Columns can be sorted in ascending or descending order. Sorting
+              controls are located in the column headers and indicated with an
+              arrow icon when a column has been sorted.
+            </p>
+            <p>To sort easily the entire column header is clickable.</p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><a href="attachments/data-table/2749137434.mov"
+                >Sort Interaction.mov</a
+              ></span
+            >
+            <h3 id="Tabledocumentation-Multi-Select:">Multi-Select:</h3>
+            <p>
+              The table supports multi-selection using check box control. The
+              checkbox button is placed in the first column on the left side.
+              This type of behavior is used in picker patterns.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><a href="attachments/data-table/2746124398.mov"
+                >Screen Recording 2022-06-21 at 3.16.49 PM.mov</a
+              ></span
+            >
+            <h3 id="Tabledocumentation-Multi-SelectbehaviorwithTopbar:">
+              Multi-Select behavior with Top bar:
+            </h3>
+            <p>
+              Multi-Select behavior can be configured with the Top bar to give
+              &ldquo;bulk action&rdquo; functionality. Bulk actions are
+              functions that may be performed on multiple items within a table.
+              Once the user selects at least one row from the table, the bulk
+              action top bar&nbsp;appears, presenting the user with actions they
+              can take. To exit or escape &ldquo;bulk action mode&rdquo;, the
+              user can click &ldquo;Clear Selection&rdquo; or deselect the
+              items.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><a href="attachments/data-table/2749235265.mov"
+                >Multi select 2.mov</a
+              ></span
+            >
+            <h3 id="Tabledocumentation-Single-Select:">Single-Select:</h3>
+            <p>
+              The table supports a single selection radio button control. Only
+              one row can be selected at a time when using the radio selection.
+              The radio button is placed in the first column on the left side.
+              This type of behavior is used in picker patterns.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><a href="attachments/data-table/2746909592.mov"
+                >Screen Recording 2022-06-21 at 3.38.49 PM.mov</a
+              ></span
+            >
+            <h3 id="Tabledocumentation-ExpandableRow:">Expandable Row:</h3>
+            <p>
+              The expandable row is useful for presenting large amounts of data
+              in a small space. Use the expanded section for supplementary
+              information. Although this expanded slot can be used to show any
+              type of data display component, please be cautious while using it,
+              and only show row-related contextual information.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2748514523.png"
+                data-image-src="/assets/attachments/data-table/2748514523.png"
+                data-height="580"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2748514523"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220622-102707.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="136742c0-283b-4666-8dfd-e7e163afea4f"
+                data-media-type="file"
+            /></span>
+            <h3 id="Tabledocumentation-PinningColumn:">Pinning Column:</h3>
+            <p>
+              The column header menu can provide the option to pin columns
+              either to the left or to the right. In a horizontal scroll
+              situation, the user can pin a column containing useful
+              information. Pinning as a feature is both user and system
+              configured.
+            </p>
+            <p>
+              The designers can also by default pin some columns based on the
+              context of the product.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><a href="attachments/data-table/2746876852.mov"
+                >Screen Recording 2022-06-21 at 6.15.55 PM.mov</a
+              ></span
+            >
+            <h3 id="Tabledocumentation-Copystring:">Copy string:</h3>
+            <p>
+              A copy action can be configured in the cell for users to copy the
+              data of the cell. The copy action copies the entire string
+              irrespective of whether it is truncated or not.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2748225844.png"
+                data-image-src="/assets/attachments/data-table/2748225844.png"
+                data-height="384"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2748225844"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220624-075210.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="45b55f95-bdbe-43b0-bc25-f4fc54fd2347"
+                data-media-type="file"
+            /></span>
+            <h3 id="Tabledocumentation-ColumnShow/Hide">Column Show/Hide</h3>
+            <p>
+              Table Column Show/Hide allows u to choose which columns they want
+              to display or hide in a table. This feature is particularly useful
+              when dealing with large tables that contain a lot of data, as it
+              allows users to focus on the information that is relevant to them.
+            </p>
+            <p>
+              This feature typically saves a user's selections as a preference,
+              so the next time they access the table, it will display according
+              to their previously saved preferences.
+            </p>
+            <h3 id="Tabledocumentation-RowGrouping">Row Grouping</h3>
+            <p>
+              Table grouping allows you to group data rows in a table based on
+              common values in one or more columns. This functionality is
+              particularly useful when dealing with large amounts of data, as it
+              allows users to easily organize and summarize information. The
+              groups are displayed as collapsed rows that can be expanded to
+              reveal the individual data rows within each group.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2901115055.png"
+                data-image-src="/assets/attachments/data-table/2901115055.png"
+                data-height="1306"
+                data-width="2198"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2901115055"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230220-054103.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="0e1e17cb-60b3-4f71-a86d-8b8f3f6aa606"
+                data-media-type="file" /></span
+            ><span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2901147847.png"
+                data-image-src="/assets/attachments/data-table/2901147847.png"
+                data-height="972"
+                data-width="2198"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2901147847"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20230220-054337.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="4cd31073-9793-4b84-a83d-91088b5c0a61"
+                data-media-type="file"
+            /></span>
+            <h3 id="Tabledocumentation-ColumnDescription">
+              Column Description
+            </h3>
+            <h3 id="Tabledocumentation-ColumnRe-ordering">
+              Column Re-ordering
+            </h3>
+            <h3 id="Tabledocumentation-OverflowBehaviour">
+              Overflow Behaviour
+            </h3>
+            <h4 id="Tabledocumentation-TextTruncationandWrapping:">
+              Text Truncation and Wrapping:
+            </h4>
+            <p>
+              By default, table cells support both truncation and wrapping.
+              Based on the context and use case these overflow properties can be
+              configured.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2749366663.png"
+                data-image-src="/assets/attachments/data-table/2749366663.png"
+                data-height="368"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2749366663"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220624-074145.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="41140d9a-3019-40e9-8941-b45540ff25e6"
+                data-media-type="file"
+            /></span>
+            <h4 id="Tabledocumentation-HorizontalScroll:">
+              Horizontal Scroll:
+            </h4>
+            <p>
+              When the columns occupy more than the available space of the
+              viewport, a horizontal scroll is enabled. This ensures that the
+              table column does not break on different viewport sizes. To reduce
+              horizontal scroll designers can apply Text Truncation and Wrapping
+              on relevant columns.
+            </p>
+            <p>
+              By default the row operation column, the action column, and the
+              link column are fixed during horizontal scroll to ensure that any
+              interaction with the table is not hidden. The designers can choose
+              to override this behavior.
+            </p>
+            <p>
+              In the below example check-box(Row operation), Notification name
+              (Link to table&rsquo;s detailed view), and action are fixed.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2748225819.png"
+                data-image-src="/assets/attachments/data-table/2748225819.png"
+                data-height="432"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2748225819"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220624-074104.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="27e4c1a7-3029-4167-911f-10dda38b9803"
+                data-media-type="file"
+            /></span>
+            <h4 id="Tabledocumentation-VerticalScroll:">Vertical Scroll:</h4>
+            <p>
+              When the column occupies more than the available space of the
+              viewport then vertical scroll is enabled. The scrolling behavior
+              depends on the header and the footer of the table, the scroll
+              behavior is designed in such a way that it avoids multiple
+              vertical scrolling.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><a href="attachments/data-table/2748514352.mov?width=680"
+                >Screen Recording 2022-06-22 at 2.55.55 PM.mov</a
+              ></span
+            >
+            <h2 id="Tabledocumentation-Actiontoviewdetailofthetable:">
+              Action to view detail of the table:
+            </h2>
+            <p>
+              There are two ways designers can design for viewing details of the
+              table row.
+            </p>
+            <ol start="1">
+              <li><p>By using the Unique Primary link of the table.</p></li>
+              <li>
+                <p>By giving an explicit action &ldquo;View details&rdquo;.</p>
+              </li>
+            </ol>
+            <h3 id="Tabledocumentation-ByusingtheUniquePrimarylinkofthetable:">
+              By using the Unique Primary link of the table:
+            </h3>
+            <p>
+              Use this method when the unique primary identifier is logical and
+              can be easily understood by the user e.g.
+            </p>
+            <p>
+              In the below image &ldquo;Notification name&rdquo; is a<strong>
+                unique logical and understandable</strong
+              >
+              link that can be configured to view details on the table row.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2748325010.png"
+                data-image-src="/assets/attachments/data-table/2748325010.png"
+                data-height="488"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2748325010"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220624-074036.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="66b4ff94-0cc4-4478-9b27-4eff5fa55b19"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h3 id="Tabledocumentation-Bygivinganexplicitactionviewdetails:">
+              By giving an explicit action view details:
+            </h3>
+            <p>
+              Use this method when the unique primary identifier is random and
+              not easily understood by the user e.g.
+            </p>
+            <p>
+              In the below image &ldquo;ID&rdquo; is a<strong>
+                Randomly generated number</strong
+              >. So in this case giving an explicit view details action can be
+              configured.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2749366655.png"
+                data-image-src="/assets/attachments/data-table/2749366655.png"
+                data-height="488"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2749366655"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220624-074024.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="c0e5cfe6-4487-4593-bc5e-6aaedb3f639a"
+                data-media-type="file"
+            /></span>
+            <p />
+            <h2 id="Tabledocumentation-Usageguidelines:">Usage guidelines:</h2>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2749137380.png"
+                data-image-src="/assets/attachments/data-table/2749137380.png"
+                data-height="299"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2749137380"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220623-074125.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="9c1e410c-8e41-4e47-8f24-6531b9ed95a8"
+                data-media-type="file"
+            /></span>
+            <p>
+              Don&rsquo;t use a <strong>left-aligned Header</strong> with the
+              <strong>right-aligned data</strong>.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2749235221.png"
+                data-image-src="/assets/attachments/data-table/2749235221.png"
+                data-height="207"
+                data-width="794"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2749235221"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220623-073752.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="e401b716-11bd-4776-9345-d78b25d07674"
+                data-media-type="file"
+            /></span>
+            <p>
+              For <strong>&ldquo;view detail action&rdquo; </strong>always try
+              and support the icon with a
+              <strong>text label like &ldquo;View&rdquo;</strong>, to better
+              signify the intent of the action.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/data-table/2748744607.png"
+                data-image-src="/assets/attachments/data-table/2748744607.png"
+                data-height="299"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2748744607"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="image-20220623-074136.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="data-table"
+                data-linked-resource-container-version="16"
+                data-media-id="659ba05d-9619-4e36-ab8d-9b36fee6c63c"
+                data-media-type="file"
+            /></span>
+            <p>
+              Always keep the text in the table header uppercase, this is done
+              to ensure good visual hierarchy.
+            </p>
+            <p />
+            <p />
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

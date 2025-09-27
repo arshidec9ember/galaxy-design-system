@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`z-spinner should work with \`size\` prop 1`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-opacity-spinning: 0.4; --z-size: 28px; --z-scrim-color: rgba(2, 13, 77, 0.4); --z-color: #000000; --z-secondary-color: #000000; --z-text-color: #000000;"`;
+
+exports[`z-spinner should work with \`size\` prop 2`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-opacity-spinning: 0.4; --z-size: 34px; --z-scrim-color: rgba(2, 13, 77, 0.4); --z-color: #000000; --z-secondary-color: #000000; --z-text-color: #000000;"`;
+
+exports[`z-spinner should work with \`size\` prop 3`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-opacity-spinning: 0.4; --z-size: 40px; --z-scrim-color: rgba(2, 13, 77, 0.4); --z-color: #000000; --z-secondary-color: #000000; --z-text-color: #000000;"`;
+
+exports[`z-spinner should work with \`size\` prop 4`] = `"--z-bezier: cubic-bezier(.4, 0, .2, 1); --z-opacity-spinning: 0.4; --z-size: 71px; --z-scrim-color: rgba(2, 13, 77, 0.4); --z-color: #000000; --z-secondary-color: #000000; --z-text-color: #000000;"`;

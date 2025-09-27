@@ -1,0 +1,135 @@
+<markdown>
+# Batch customizing menu options
+
+The `render-label`, `render-icon`, `expand-icon` can be used to batch render menu options.
+</markdown>
+
+<template>
+  <z-space vertical>
+    <z-switch v-model="collapsed" />
+    <z-layout has-sider>
+      <z-layout-sider
+        bordered
+        collapse-mode="width"
+        :collapsed-width="60"
+        :width="244"
+        :collapsed="collapsed"
+        show-trigger
+        @collapse="collapsed = true"
+        @expand="collapsed = false"
+      >
+        <z-menu
+          :collapsed="collapsed"
+          :collapsed-icon-size="20"
+          :options="menuOptions"
+          :render-label="renderMenuLabel"
+          :render-icon="renderMenuIcon"
+        />
+      </z-layout-sider>
+      <z-layout>
+        <span>Content</span>
+      </z-layout>
+    </z-layout>
+  </z-space>
+</template>
+
+<script lang="ts">
+import { h, ref, defineComponent } from 'vue'
+import { ZIcon } from '@zeta-gds/components'
+import type { MenuOption } from '@zeta-gds/components'
+import { BookmarkOutline } from '@vicons/ionicons5'
+
+const menuOptions: MenuOption[] = [
+  {
+    label: 'Hear the Wind Sing',
+    key: 'hear-the-wind-sing',
+    href: 'https://en.wikipedia.org/wiki/Hear_the_Wind_Sing'
+  },
+  {
+    label: 'Pinball 1973',
+    key: 'pinball-1973',
+    disabled: true,
+    children: [
+      {
+        label: 'Rat',
+        key: 'rat'
+      }
+    ]
+  },
+  {
+    label: 'A Wild Sheep Chase',
+    key: 'a-wild-sheep-chase',
+    disabled: true
+  },
+  {
+    label: 'Dance Dance Dance',
+    key: 'Dance Dance Dance',
+    children: [
+      {
+        type: 'group',
+        label: 'People',
+        key: 'people',
+        children: [
+          {
+            label: 'Narrator',
+            key: 'narrator'
+          },
+          {
+            label: 'Sheep Man',
+            key: 'sheep-man'
+          }
+        ]
+      },
+      {
+        label: 'Beverage',
+        key: 'beverage',
+        children: [
+          {
+            label: 'Whisky',
+            key: 'whisky',
+            href: 'https://en.wikipedia.org/wiki/Whisky'
+          }
+        ]
+      },
+      {
+        label: 'Food',
+        key: 'food',
+        children: [
+          {
+            label: 'Sandwich',
+            key: 'sandwich'
+          }
+        ]
+      },
+      {
+        label: 'The past increases. The future recedes.',
+        key: 'the-past-increases-the-future-recedes'
+      }
+    ]
+  }
+]
+
+export default defineComponent({
+  setup () {
+    return {
+      menuOptions,
+      collapsed: ref(true),
+      renderMenuLabel (option: MenuOption) {
+        if ('href' in option) {
+          return h('a', { href: option.href, target: '_blank' }, [
+            option.label as string
+          ])
+        }
+        return option.label as string
+      },
+      renderMenuIcon (option: MenuOption) {
+        // return render placeholder for indent
+        if (option.key === 'sheep-man') return true
+        // return falsy, don't render icon placeholder
+        if (option.key === 'food') return null
+        return h(ZIcon, null, { default: () => h(BookmarkOutline) })
+      }
+    }
+  }
+})
+</script>

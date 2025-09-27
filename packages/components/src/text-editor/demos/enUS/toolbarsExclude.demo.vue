@@ -1,0 +1,45 @@
+<markdown>
+ # Toolbar exclude
+ </markdown>
+<template>
+  <div>
+    <ZTextEditor
+      :value="`### Excluding bold and underline option! `"
+      :read-only="false"
+      :input-box-width="'50%'"
+      :editor-id="'toolbars-exclude-editor'"
+      :toolbars="[
+        'bold',
+        'underline',
+        'italic',
+        'title',
+        'strikeThrough',
+        'sub',
+        'sup',
+        'quote',
+        'unorderedList',
+        'orderedList',
+        'task',
+        'codeRow',
+        'code',
+        'link',
+        'image',
+        'table',
+        'mermaid',
+        'katex',
+        'revoke',
+        'next',
+        'save',
+        'pageFullscreen',
+        'fullscreen',
+        'preview',
+        'previewOnly',
+        'htmlPreview',
+        'catalog',
+        'github'
+      ]"
+      :toolbars-exclude="['bold', 'underline']"
+      :auto-height="true"
+    />
+  </div>
+</template>

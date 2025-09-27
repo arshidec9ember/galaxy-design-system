@@ -1,0 +1,102 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  --header-height: 64px;
+  --logo-width: 250px;
+  --header-end: 480px;
+}
+
+@media only screen and (max-width: 639px) {
+  body {
+    overflow: visible;
+  }
+  .md-table-wrapper {
+    overflow: auto;
+    margin: 0 -16px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .md-table-wrapper::before,
+  .md-table-wrapper::after {
+    content: '';
+    width: 16px;
+    flex-shrink: 0;
+  }
+}
+
+.demo-card .demo-card__view:not(:first-child) {
+  margin-top: 16px;
+}
+
+.demo-card .demo-card__view pre {
+  font-family: v-mono, monospace;
+}
+
+.demo-card .demo-card__view code {
+  font-family: v-mono, monospace;
+}
+
+.demo-card code.z-text {
+  white-space: nowrap;
+}
+
+.z-blockquote {
+  max-width: 680px;
+}
+
+.doc-wrapper {
+  padding: 32px 24px 56px 56px;
+}
+
+.tabs > .z-tabs-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+div[themename='dark'] .tabs > .z-tabs-nav {
+  background-color: var(--gds-color-bg-nav-dark);
+}
+
+.md-table-wrapper {
+  margin-bottom: 16px;
+}
+
+.md-table-wrapper:last-child,
+.md-card:last-child {
+  margin-bottom: 0;
+}
+
+.md-table td:first-child {
+  font-size: 0.93em !important;
+  font-family: v-mono, monospace;
+}
+
+.md-table .z-text.z-text--code {
+  font-size: 0.93em !important;
+}
+
+.md-card {
+  margin-bottom: 16px;
+}
+
+.ts-dark-theme .demo-card {
+  background-color: #180f25;
+}
+
+.demo-card.demo-card--custom-element .z-card-standard__content {
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #f9f9fa 25%, transparent 25%),
+    linear-gradient(135deg, #f9f9fa 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #f9f9fa 75%),
+    linear-gradient(135deg, transparent 75%, #f9f9fa 75%);
+  background-position: 0px 0px, 10px 0px, 10px -10px, 0px 10px;
+  background-size: 20px 20px;
+  border-block-end: 1px solid #ebecf0;
+}

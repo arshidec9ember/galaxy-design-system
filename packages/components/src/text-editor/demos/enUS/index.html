@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown Editor Component Overview</title>
+  <meta charset="UTF-8" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    h1, h2, h3 { color: #0747a6; }
+    .section { margin-bottom: 2rem; }
+    .img-demo { width: 90%; display: block; margin: 1rem 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #f5f5f5; }
+    ul, ol { margin-left: 2rem; }
+    .do-dont { display: flex; gap: 2rem; }
+    .do, .dont { flex: 1; }
+    .do h3, .dont h3 { margin-top: 0; }
+    .do { background: #e6f7e6; padding: 1rem; border-radius: 6px; }
+    .dont { background: #ffeaea; padding: 1rem; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Component Overview</h1>
+  <div class="section">
+    <p>
+      The <strong>Markdown Editor</strong> is a text input component that allows users to write and preview rich-formatted content using Markdown syntax. These editors are commonly used for creating documentation, notes, and content-rich UI elements like help texts, tooltips, and descriptions.
+    </p>
+  </div>
+
+  <h2>Anatomy</h2>
+  <div class="section">
+    <img src="Anatomy.png" alt="Markdown Editor Anatomy" class="img-demo" />
+    <p><strong>Markdown Editor</strong></p>
+  </div>
+
+  <h2>Toolbar Functionality</h2>
+  <div class="section">
+    <p>
+      The Markdown Editor includes a comprehensive toolbar that empowers users to format content efficiently using a wide range of controls. Basic text styling options include bold, italic, strikethrough, and underline, along with support for headers, quotes, unordered/ordered lists, task lists, subscript, and superscript. Advanced formatting features include inline code, block-level code, and inline/block math rendering. Users can enrich content by uploading images, links, and media clips, inserting tables, flowcharts, and managing prettier formatting for clean syntax. Functional actions such as undo, redo, save, and multiple preview modes (standard, HTML, preview-only) enhance usability. For broader control, users can toggle between full screen, full screen in page, and access catalogs or link directly to GitHub. These toolbar properties make the Markdown Editor a versatile component for structured content creation across documentation and collaborative platforms.
+    </p>
+    <img src="Frame 1686551619.png" alt="Toolbar Functionality" class="img-demo" />
+  </div>
+
+  <h2>Supported Markdown Syntax (User friendly)</h2>
+  <div class="section">
+    <table>
+      <thead>
+        <tr>
+          <th>Markdown</th>
+          <th>Rendered UI</th>
+          <th>Used For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code># Heading 1</code></td>
+          <td><strong>Heading 1</strong></td>
+          <td>Section titles in documentation</td>
+        </tr>
+        <tr>
+          <td><code>**Bold**</code></td>
+          <td><strong>Bold</strong></td>
+          <td>Emphasis on keywords or warnings</td>
+        </tr>
+        <tr>
+          <td><code>_Italic_</code></td>
+          <td><em>Italic</em></td>
+          <td>Subtle emphasis</td>
+        </tr>
+        <tr>
+          <td><code>- List</code></td>
+          <td>• Bullet list</td>
+          <td>Feature or step-by-step listings</td>
+        </tr>
+        <tr>
+          <td><code>[Link](#)</code></td>
+          <td><a href="#">Hyperlink</a></td>
+          <td>Navigation to docs or external pages</td>
+        </tr>
+        <tr>
+          <td><code>Code</code></td>
+          <td><code>Inline code</code></td>
+          <td>Show prop names, variables</td>
+        </tr>
+        <tr>
+          <td><code>&gt; Quote</code></td>
+          <td><blockquote>Quoted block</blockquote></td>
+          <td>Tips or user guidance</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Behaviour</h2>
+  <div class="section">
+    <h3>Resizable Section</h3>
+    <p>
+      By default, the Markdown Editor displays two sections side by side — Editor and Preview — each occupying 50% of the screen width. This split layout offers a balanced writing and real-time preview experience.
+    </p>
+    <p>
+      The divider between the two sections is fully resizable, allowing users to adjust the width of each panel based on their preferred focus — whether they want to concentrate more on writing or reviewing the formatted output.
+    </p>
+    <p>
+      This flexibility enhances usability and accommodates various workflows, such as content-heavy editing or detailed design reviews.
+    </p>
+    <img src="image-20250520-083155.png" alt="Resizable Section" class="img-demo" />
+
+    <h3>Fullscreen in page</h3>
+    <p>
+      The Markdown Editor is designed to be fully functional within the browser window, providing a seamless, in-page editing experience.
+    </p>
+    <img src="image-20250520-084139.png" alt="Fullscreen in page" class="img-demo" />
+
+    <h3>Fullscreen Mode</h3>
+    <p>
+      The Markdown Editor supports a fullscreen mode, allowing users to expand the editor to occupy the entire browser window. This interaction is designed to minimize distractions and help users focus entirely on writing and formatting content. It's especially useful for long-form documentation, blogs, or any content that requires deep attention.
+    </p>
+
+    <h3>Preview</h3>
+    <p>
+      The preview panel is enabled by default, allowing users to see real-time formatted output as they write. However, it can be easily toggled on or off using the preview icon in the toolbar, giving users control over their editing space based on their preference.
+    </p>
+
+    <h3>Preview Only</h3>
+    <p>
+      Preview-Only mode hides the editor panel and displays only the rendered Markdown. This view is ideal when users need to review formatted content without the distraction of the raw Markdown input.
+    </p>
+
+    <h3>HTML Preview</h3>
+    <p>
+      The content displayed in the preview section is automatically converted from Markdown to HTML. Users can switch to HTML Preview mode to view the underlying HTML output, which is helpful for validating structure or copying the final markup for implementation.
+    </p>
+
+    <h3>Catalog</h3>
+    <p>
+      All the content added in the editor is automatically organized and represented as a catalog within the editor. This provides users with a structured overview of headings and sections, enabling quick navigation through long or complex Markdown documents.
+    </p>
+  </div>
+
+  <h2>Usage Guidelines</h2>
+  <div class="section do-dont">
+    <div class="do">
+      <ul>
+        <li>Use proper Markdown syntax: Use <code>#</code>, <code>##</code>, <code>-</code>, <code>*</code>, <code></code> etc. to maintain structured, semantic content.</li>
+        <li>Preview before publishing: Always use the right-side preview pane to validate how the final content will render.</li>
+        <li>Use formatting toolbar: Utilize the top formatting bar to apply headings, bold/italic text, lists, links, and tables.</li>
+        <li>Insert links properly: Use <code>[Link Text](https://example.com)</code> format to ensure accessibility and clarity.</li>
+      </ul>
+    </div>
+    <div class="dont">
+      <h3>❌ Don’ts</h3>
+      <ul>
+        <li>Don’t write without structure: Avoid long unbroken text or skipping heading levels (<code>#</code> to <code>###</code> directly).</li>
+        <li>Don’t misuse inline code or pre tags: Use backticks (<code></code>) for inline and triple backticks (<code></code>) for blocks.</li>
+        <li>Don’t paste unsupported HTML: Stick to Markdown wherever possible—HTML may not render correctly in preview.</li>
+        <li>Don’t overload with styles: Keep formatting minimal and consistent; avoid bolding entire paragraphs.</li>
+        <li>Don’t break links or images: Check that all external references work correctly before sharing.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

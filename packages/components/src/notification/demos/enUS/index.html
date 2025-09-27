@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Toast documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              <style>
+                [data-colorid='zgp8hfrepq'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='zgp8hfrepq'] {
+                  color: #004eb3;
+                }
+                [data-colorid='f9fblmmc6o'] {
+                  color: #4c9aff;
+                }
+                html[data-color-mode='dark'] [data-colorid='f9fblmmc6o'] {
+                  color: #004eb3;
+                }
+              </style>
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper"
+            ></span>
+            <h2 id="Toastdocumentation-Anatomy">
+              <span
+                class="inline-comment-marker"
+                data-ref="b9a41f88-bcb5-456c-8c4e-aee0e559664c"
+                >Anatomy</span
+              >
+            </h2>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2706805010.png"
+                data-image-src="/assets/attachments/notification/2706805010.png"
+                data-height="463"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2706805010"
+                data-linked-resource-version="7"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_anatomy.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="c2d04df0-0aee-4ddf-8943-f860c5068a86"
+                data-media-type="file"
+            /></span>
+            <h2 id="Toastdocumentation-Variations">Variations</h2>
+            <p>
+              Toasts are classified into four types based on semantic usages:
+            </p>
+            <ol start="1">
+              <li>
+                <p>
+                  <strong>Information </strong>is<strong> </strong>Used to
+                  convey neutral information and may not require as much
+                  attention from the user.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Success </strong>is<strong> </strong>Used to convey
+                  success or completion messages.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Warning </strong>is Used to displaying warning and
+                  caution messages.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong
+                    ><span
+                      class="inline-comment-marker"
+                      data-ref="9f1d3549-c27a-4139-834f-121cfaeee623"
+                      >Error</span
+                    > </strong
+                  >Used to alert users of an error or a failure scenario.
+                </p>
+              </li>
+            </ol>
+            <p>
+              The toasts are grouped into two categories Single line toast and
+              Descriptive toast.
+            </p>
+            <h3 id="Toastdocumentation-Placement">
+              <span
+                class="inline-comment-marker"
+                data-ref="b10b4a7e-c5cb-421f-a241-c98016d482b4"
+                >Placement</span
+              >
+            </h3>
+            <p>
+              The placement of toasts by default is on the
+              <strong>bottom right corner</strong> of the interface.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2706805050.png"
+                data-image-src="/assets/attachments/notification/2706805050.png"
+                data-height="463"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2706805050"
+                data-linked-resource-version="5"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_placement.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="b545117a-6016-4361-be36-5552c5a08134"
+                data-media-type="file"
+            /></span>
+            <h2 id="Toastdocumentation-Configurations">Configurations</h2>
+            <p>
+              Configurations are used to modify the toast component structure
+              depending upon the use case for which they are used. The below
+              mentioned configurations are available for toasts :
+            </p>
+            <h3 id="Toastdocumentation-SingleLineToast">Single Line Toast</h3>
+            <p>
+              The single line toast is a single line of feedback message
+              containing a verb phrase associated with the action performed by
+              the user. The character limit of a single-line toast should be
+              within
+              <span
+                class="inline-comment-marker"
+                data-ref="cd23985a-2042-47dd-8f63-416f4e9900ed"
+                >38 characters</span
+              >
+              to avoid wrapping up multiple lines.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2706805016.png"
+                data-image-src="/assets/attachments/notification/2706805016.png"
+                data-height="624"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2706805016"
+                data-linked-resource-version="7"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_singleline_variants.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="026c9c88-26ba-4e11-8a47-29206503744a"
+                data-media-type="file"
+            /></span>
+            <h3 id="Toastdocumentation-DescriptiveToast">Descriptive Toast</h3>
+            <p>
+              A descriptive toast contains a heading along with a description.
+              It allows the feedback message to be a bit more elaborate. This
+              does not mean that the description should be more verbal. The
+              character limit of the toast heading is 38 characters and that of
+              the description is 80 characters.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2706640026.png"
+                data-image-src="/assets/attachments/notification/2706640026.png"
+                data-height="784"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2706640026"
+                data-linked-resource-version="7"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_descriptive_variants.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="3b76243d-d1e5-4130-a656-e8ef6c6916c7"
+                data-media-type="file"
+            /></span>
+            <h3 id="Toastdocumentation-SingleToast&amp;MultipleToasts">
+              Single Toast &amp; Multiple Toasts
+            </h3>
+            <p>
+              If there are more than one toast popping up on the screen after
+              the user performs certain actions, the toast configuration can be
+              set to show either one toast at a time on screen or multiple
+              toasts stacked on top of another.
+            </p>
+            <p>
+              <strong>Single Toast : </strong> In case of another toast popping
+              up within the auto dismissal time of first toast, the previous
+              toast is replaced and at a time only one toast will be displayed
+              on the screen.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/3041788157.png"
+                data-image-src="/assets/attachments/notification/3041788157.png"
+                data-height="717"
+                data-width="1074"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3041788157"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_single.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="9a86ec16-a6f1-492d-9a03-6bab892da583"
+                data-media-type="file"
+            /></span>
+            <p>
+              <strong>Multiple Toasts : </strong> In case of another toast
+              popping up, the previous toast is moved up and the new toast is
+              displayed below it. The toasts are dismissed according first in
+              first out basis.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/3041526038.png"
+                data-image-src="/assets/attachments/notification/3041526038.png"
+                data-height="717"
+                data-width="1074"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3041526038"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_multiple.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="fe58598b-940f-418c-a66d-ffb8c3d3365c"
+                data-media-type="file"
+            /></span>
+            <h3 id="Toastdocumentation-Actions">
+              <span
+                class="inline-comment-marker"
+                data-ref="7f66b982-e1bc-42c9-91cb-382b088b7df7"
+                >Actions</span
+              >
+            </h3>
+            <p>
+              Toasts can have an icon-only close button, a secondary button with
+              a contextual action to take, and a tertiary button for an extra
+              action to take.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="680"
+                loading="lazy"
+                src="/assets/attachments/notification/2980741441.png?width=680"
+                data-image-src="/assets/attachments/notification/2980741441.png"
+                data-height="428"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2980741441"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_behaviour_actions.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="8b581eb3-defc-4be3-ae18-02451e0b1d1c"
+                data-media-type="file"
+            /></span>
+            <h2 id="Toastdocumentation-Behavior">Behavior</h2>
+            <ul>
+              <li>
+                <p><span data-colorid="zgp8hfrepq">Dismissal</span></p>
+              </li>
+              <li>
+                <p><span data-colorid="f9fblmmc6o">Text Overflow</span></p>
+              </li>
+            </ul>
+            <h3 id="Toastdocumentation-Dismissal">
+              <span
+                class="inline-comment-marker"
+                data-ref="7f66b982-e1bc-42c9-91cb-382b088b7df7"
+                >Dismissal</span
+              >
+            </h3>
+            <p>Toasts can be dismissed in two ways :</p>
+            <p>
+              <strong>Auto Dismissal: </strong>Toasts are dismissed
+              automatically based on a set duration. But when the cursor is
+              positioned over the toast, then it does not auto-dismiss until the
+              cursor is removed and the time out has occurred. Also if user
+              navigates to a different page toast should auto dismiss from the
+              view.
+            </p>
+            <p>
+              The default duration for the single-line toast is set to
+              <span
+                class="inline-comment-marker"
+                data-ref="031ab913-567f-4014-893b-bb0158d2bb9b"
+                >4 seconds</span
+              >.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><a href="attachments/notification/2980643727.mp4"
+                >Toast_SingleLine_Animation.mp4</a
+              ></span
+            >
+            <p />
+            <p>
+              The default duration for descriptive toast is set to 6 seconds.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><a href="attachments/notification/2980839976.mp4"
+                >Toast_Descriptive_Animation.mp4</a
+              ></span
+            >
+            <p />
+            <p>
+              <strong>Voluntary Dismissal: </strong>Voluntary dismissal happens
+              when the user clicks on the dismiss action button &ldquo;x&rdquo;
+              in order to close the toast or acknowledge the notification.
+            </p>
+            <h3 id="Toastdocumentation-Textoverflow">Text overflow</h3>
+            <p>
+              When the toast description text is too long for the container
+              width, it wraps to the next line.
+            </p>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2981593841.png"
+                data-image-src="/assets/attachments/notification/2981593841.png"
+                data-height="272"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2981593841"
+                data-linked-resource-version="2"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_text_overflow.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="13678316-ca40-40aa-b027-79f0ec8d0fac"
+                data-media-type="file"
+            /></span>
+            <h2 id="Toastdocumentation-UsageGuidelines">
+              <span
+                class="inline-comment-marker"
+                data-ref="64d348e5-548a-4fd7-8770-0cd43bd4ad2d"
+                >Usage Guidelines</span
+              >
+            </h2>
+            <h3 id="Toastdocumentation-Do’s">Do&rsquo;s</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2707096659.png"
+                data-image-src="/assets/attachments/notification/2707096659.png"
+                data-height="244"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2707096659"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_do_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="eeb88c64-a7f6-4d6e-b755-13ca78910060"
+                data-media-type="file"
+            /></span>
+            <p>
+              A toast message should always be preferably kept on the bottom
+              right corner of the interface.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2706866717.png"
+                data-image-src="/assets/attachments/notification/2706866717.png"
+                data-height="220"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2706866717"
+                data-linked-resource-version="6"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_do_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="d3ddff9a-d8a9-4241-a89b-9b21f3bde792"
+                data-media-type="file"
+            /></span>
+            <p>
+              A toast message should be as brief as possible, preferably two to
+              four words.
+            </p>
+            <h3 id="Toastdocumentation-Don't">Don't</h3>
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2706932245.png"
+                data-image-src="/assets/attachments/notification/2706932245.png"
+                data-height="260"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2706932245"
+                data-linked-resource-version="4"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_dont_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="793c67c3-b415-4855-8915-95216f32bf0f"
+                data-media-type="file"
+            /></span>
+            <p>Avoid long titles to avoid text wrapping.</p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2707259983.png"
+                data-image-src="/assets/attachments/notification/2707259983.png"
+                data-height="260"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2707259983"
+                data-linked-resource-version="4"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_dont_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="a7c43e3a-a769-4b99-ae38-c0a552a67737"
+                data-media-type="file"
+            /></span>
+            <p>
+              A Toast message should not contain any critical or time-sensitive
+              information. Consider using a modal or alert.
+            </p>
+            <p />
+            <span class="confluence-embedded-file-wrapper image-center-wrapper"
+              ><img
+                class="confluence-embedded-image image-center"
+                loading="lazy"
+                src="/assets/attachments/notification/2706866743.png"
+                data-image-src="/assets/attachments/notification/2706866743.png"
+                data-height="260"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="2706866743"
+                data-linked-resource-version="6"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="toast_dont_3.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="notification"
+                data-linked-resource-container-version="24"
+                data-media-id="7cba89ed-6772-4cc4-b190-43fff4b323e6"
+                data-media-type="file"
+            /></span>
+            <p>Avoid long descriptions in a toast.</p>
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

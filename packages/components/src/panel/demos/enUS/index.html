@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy Design System : Side Panel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      img {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body class="theme-default aui-theme-default">
+    <div id="page">
+      <div id="main" class="aui-page-panel">
+        <div id="content" class="view">
+          <div id="main-content" class="wiki-content group">
+            <p>
+              The side panel is a vertical container used to fill forms, display
+              related information or navigation. It enables users to view
+              content while referencing the relevant page information within a
+              defined context. It streamlines data input, keeping important
+              content accessible alongside the form for an enhanced user
+              experience.
+            </p>
+            <p>
+              Side panel by default compress the parent content to left and
+              opens in the right side of the screen. It can also be configured
+              to open on top of the parent content without any overlay.
+            </p>
+            <h2 id="SidePanel-Anatomy">Anatomy</h2>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077701774.png?width=760"
+                data-image-src="/assets/attachments/panel/3077701774.png"
+                data-height="916"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077701774"
+                data-linked-resource-version="9"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_anatomy.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="6624ca38-1632-4258-9dd1-9a40a5391c1b"
+                data-media-type="file"
+            /></span>
+            <p>The side panel header comprises of:</p>
+            <ol start="1">
+              <li><p>Title</p></li>
+              <li>
+                <p>
+                  Tools (It’s a button group and can be configured based on
+                  usage and requirement)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Side panel actions (This would be present in case of details
+                  view)
+                </p>
+              </li>
+            </ol>
+            <p>The side panel footer has:</p>
+            <ol start="1">
+              <li>
+                <p>
+                  LHS actions (These will be present if the side panel is used
+                  to submit a form)
+                </p>
+              </li>
+              <li>
+                <p>
+                  RHS navigation (This will be present only in case of
+                  parent-child view to traverse the table rows)
+                </p>
+              </li>
+            </ol>
+            <p>
+              The collapse icon will be visible only on hover of the side panel
+              but the expand icon will always be visible on the collapsed state
+              to expand the side panel.
+            </p>
+            <h2 id="SidePanel-Configuration">Configuration</h2>
+            <p>
+              The side panel can have either of the below two configurations:
+            </p>
+            <ol start="1">
+              <li>
+                <p>
+                  Expand/collapse action: This configuration is used when the
+                  side panel is used to submit a form or a task where user
+                  action is required.
+                </p>
+              </li>
+            </ol>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077669102.png?width=760"
+                data-image-src="/assets/attachments/panel/3077669102.png"
+                data-height="784"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077669102"
+                data-linked-resource-version="5"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_configuration1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="85655f3a-ae38-4539-9eb7-3cad2bee5715"
+                data-media-type="file"
+            /></span>
+            <ol start="2">
+              <li>
+                <p>
+                  Close action: This configuration is used when the side panel
+                  is used to display details or some related information where
+                  no user action required.
+                </p>
+              </li>
+            </ol>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077636304.png?width=760"
+                data-image-src="/assets/attachments/panel/3077636304.png"
+                data-height="840"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077636304"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_configuration2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="915c32ab-830f-42a2-a2bc-1204f4b5fd69"
+                data-media-type="file"
+            /></span>
+            <h2 id="SidePanel-Variations">Variations</h2>
+            <h3 id="SidePanel-1.Slidingtheparentcontent">
+              1. Sliding the parent content
+            </h3>
+            <p>
+              One variation would be that the side panel enters from the right
+              side of the screen pushing the contents to the left. This
+              variation is available in case of responsive layout. If the user
+              drags the side panel to expand the view, the parent content
+              continues to shrink until both the containers occupy a 50-50%
+              space on the available view port.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077570791.png?width=760"
+                data-image-src="/assets/attachments/panel/3077570791.png"
+                data-height="874"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077570791"
+                data-linked-resource-version="5"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_placement.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="024c9fe6-b411-4446-8e7b-778beadfd3d7"
+                data-media-type="file"
+            /></span>
+            <h4 id="SidePanel-InteractionPrototype">Interaction Prototype</h4>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><a href="attachments/panel/3161621661.mov?width=760"
+                >SliderInteraction.mov</a
+              ></span
+            >
+            <h3 id="SidePanel-2.Floatingontheparentcontent">
+              2. Floating on the parent content
+            </h3>
+            <p>
+              Another variation would be that the side panel opens on top of the
+              parent container without any overlay. In this scenario, the parent
+              content is also accessible and there will be horizontal scroll to
+              view the complete content when side panel is opened. Here the side
+              panel has the z index &lt;value&gt;.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="sidepanel_variation2.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3161621233.png?width=760"
+                data-image-src="/assets/attachments/panel/3161621233.png"
+                data-height="509"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3161621233"
+                data-linked-resource-version="1"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_variation2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="0bf79679-e9c2-442f-b738-181ba51cd989"
+                data-media-type="file"
+            /></span>
+            <h4 id="SidePanel-InteractionPrototype.1">Interaction Prototype</h4>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><a href="attachments/panel/3161393030.mov?width=760"
+                >Floating Interaction.mov</a
+              ></span
+            >
+            <h3 id="SidePanel-Behaviours">Behaviours</h3>
+            <p><strong>Expand &amp; collapse </strong></p>
+            <p>
+              The side panel can be collapsed and docked to the right side of
+              the screen. The collapse icon is displayed only while hovering the
+              side panel. To restore the expanded view, the expand icon will
+              always be visible on the collapsed state of the side panel.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077865591.png?width=760"
+                data-image-src="/assets/attachments/panel/3077865591.png"
+                data-height="784"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077865591"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_interaction1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="fa0318ff-df82-4208-9d33-2b8a63150fbe"
+                data-media-type="file"
+            /></span>
+            <p><strong>Drag to expand view</strong></p>
+            <p>
+              On hovering the side panel’s left edge, a visual indication is
+              present which includes blue line as well as resize icon. On
+              dragging the side panel, the user can resize it to expand the
+              view.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="sidepanel_interaction2.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077865885.png?width=760"
+                data-image-src="/assets/attachments/panel/3077865885.png"
+                data-height="509"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077865885"
+                data-linked-resource-version="9"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_interaction2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="ade92d92-23bb-435b-b39a-dbcc2af37860"
+                data-media-type="file"
+            /></span>
+            <p><strong>Expand to full screen</strong></p>
+            <p>
+              On click of expand icon, the side panel is directly expanded to
+              the full screen view.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="sidepanel_interaction3.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077538466.png?width=760"
+                data-image-src="/assets/attachments/panel/3077538466.png"
+                data-height="517"
+                data-width="804"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077538466"
+                data-linked-resource-version="5"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_interaction3.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="c604ad9d-f439-4828-8662-5f779340eafb"
+                data-media-type="file"
+            /></span>
+            <p><strong>Open in new tab</strong></p>
+            <p>
+              The side panel can also be opened in a new tab where it opens as
+              full page view. But here there won’t be any side panel tools
+              available.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077637079.png?width=760"
+                data-image-src="/assets/attachments/panel/3077637079.png"
+                data-height="498"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077637079"
+                data-linked-resource-version="6"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_interaction4.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="6fe51c84-d673-41e0-9a2f-663de646d079"
+                data-media-type="file"
+            /></span>
+            <p><strong>Vertical Scroll </strong></p>
+            <p>
+              The side panel has a vertical scroll if the content is more than
+              the height of the component. In this case the header will have a
+              shadow to show the content flowing behind it.
+            </p>
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                alt="sidepanel_interaction5.png"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077735218.png?width=760"
+                data-image-src="/assets/attachments/panel/3077735218.png"
+                data-height="509"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077735218"
+                data-linked-resource-version="6"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_interaction5.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="d6ca34a4-4b87-476b-9bd6-7d46d44b39f1"
+                data-media-type="file"
+            /></span>
+            <p><strong>Height and width</strong></p>
+            <p>
+              The side panel covers the whole view port height below the global
+              header. The minimum width is 300px and maximum it goes up to 80%
+              of the view port width.
+            </p>
+            <h2 id="SidePanel-UsageGuidelines">Usage Guidelines</h2>
+            <p />
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3077604642.png?width=760"
+                data-image-src="/assets/attachments/panel/3077604642.png"
+                data-height="536"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3077604642"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_do_1.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="9686734a-11e1-43df-a79c-b10ebdad244c"
+                data-media-type="file"
+            /></span>
+            <p>Header should be sticky in case of vertical scroll.</p>
+            <p />
+            <span
+              class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+              ><img
+                class="confluence-embedded-image image-center"
+                width="760"
+                loading="lazy"
+                src="/assets/attachments/panel/3078685267.png?width=760"
+                data-image-src="/assets/attachments/panel/3078685267.png"
+                data-height="536"
+                data-width="796"
+                data-unresolved-comment-count="0"
+                data-linked-resource-id="3078685267"
+                data-linked-resource-version="3"
+                data-linked-resource-type="attachment"
+                data-linked-resource-default-alias="sidepanel_do_2.png"
+                data-base-url="https://zeta-tm.atlassian.net/wiki"
+                data-linked-resource-content-type="image/png"
+                data-linked-resource-container-id="panel"
+                data-linked-resource-container-version="12"
+                data-media-id="8f8bf353-7725-4eeb-803d-d3f026dd200f"
+                data-media-type="file"
+            /></span>
+            <p>The collapse icon should be available on hover.</p>
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
